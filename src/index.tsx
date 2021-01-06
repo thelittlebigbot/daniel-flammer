@@ -1,20 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import { Style } from './helpers';
+import { Routes, Style } from './helpers';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Daniel Flammer</h1>
+      <Routes />
     </div>
   );
 };
 
 ReactDOM.render(
   <React.StrictMode>
-    <Style />
-    <App />
+    <BrowserRouter>
+      <Style />
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('app'),
 );
