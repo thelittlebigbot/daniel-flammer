@@ -22,12 +22,10 @@ export const Layout: React.FC<Props> = ({ children }) => {
     });
 
   const renderTitle = routes.map((i, key) => {
-    if (i.path === window.location.pathname) {
-      return <Title>{i.name}</Title>;
+    if (i.path === window.location.pathname && i.name !== 'Map') {
+      return <Title key={key}>{i.name}</Title>;
     } else return null;
   });
-
-  console.log(window.location.pathname);
 
   return (
     <Component>
@@ -85,4 +83,5 @@ const Main = styled.main`
 
 const Title = styled.h1`
   font-size: ${() => style.font.size.big};
+  margin-bottom: ${() => style.font.size.big};
 `;
