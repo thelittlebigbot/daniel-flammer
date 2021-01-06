@@ -21,6 +21,14 @@ export const Layout: React.FC<Props> = ({ children }) => {
       } else return null;
     });
 
+  const renderTitle = routes.map((i, key) => {
+    if (i.path === window.location.pathname) {
+      return <Title>{i.name}</Title>;
+    } else return null;
+  });
+
+  console.log(window.location.pathname);
+
   return (
     <Component>
       <Container>
@@ -28,7 +36,10 @@ export const Layout: React.FC<Props> = ({ children }) => {
           <Logo>[LOGO]</Logo>
           <Navigation>{renderNavigationLinks}</Navigation>
         </Header>
-        <Main>{children}</Main>
+        <Main>
+          {renderTitle}
+          {children}
+        </Main>
       </Container>
     </Component>
   );
@@ -70,4 +81,8 @@ const Navigation = styled.nav`
 
 const Main = styled.main`
   margin: ${() => style.font.size.big} 0;
+`;
+
+const Title = styled.h1`
+  font-size: ${() => style.font.size.big};
 `;
