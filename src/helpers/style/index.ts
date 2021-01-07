@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const style = {
   color: {
     black: '#202020',
+    blue: '#1941ac',
     white: '#ffffff',
   },
   font: {
@@ -27,7 +28,7 @@ export const style = {
       black: 900,
     },
   },
-  opacity: '0.75',
+  opacity: '0.5',
   transition: 'all ease-in-out 0.25s',
   shadow: '10px 10px 20px rgba(0, 0, 0, 0.25)',
 };
@@ -62,7 +63,13 @@ export const Style = createGlobalStyle`
   }
 
   a {
-    color: ${style.color.black};
+    color: ${style.color.blue};
+
+    &:hover {
+      background: ${style.color.blue};
+      color: ${style.color.white};
+      padding: 0.15rem 0.30rem;
+    }
   }
 
   a, button {
