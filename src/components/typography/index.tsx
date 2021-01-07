@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { style } from '../../helpers';
 
 interface Props {
-  children: string;
+  children: string | number;
   type?: 'text' | 'title';
   variant?: 'small' | 'regular' | 'medium' | 'large' | 'big';
 }
