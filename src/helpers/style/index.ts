@@ -61,6 +61,10 @@ export const Style = createGlobalStyle`
     font-weight: ${style.font.weight.regular}
   }
 
+  a {
+    color: ${style.color.black};
+  }
+
   a, button {
     transition: ${style.transition};
   }
