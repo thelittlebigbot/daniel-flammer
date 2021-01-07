@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { Row } from '../../components';
 import { routes, style } from '../../helpers';
 
 interface Props {
@@ -69,5 +70,5 @@ const Navigation = styled.nav`
 `;
 
 const Main = styled.main`
-  margin: ${() => style.font.size.big} 0;
+  padding: ${() => style.font.size.big} 0;
 `;
