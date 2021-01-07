@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 
 import {
   Artboard,
@@ -81,10 +81,21 @@ export const routes: Props[] = [
 ];
 
 export const Routes: React.FC = () => {
+  // const reload = window.location.reload();
+
+  React.useEffect(() => {}, []);
+
   return (
     <Switch>
       {routes.map((i, key) => {
-        return <Route key={key} exact path={i.path} component={i.component} />;
+        return (
+          <Route
+            key={key}
+            exact
+            path={i.path}
+            component={withRouter(i.component)}
+          />
+        );
       })}
       <Redirect to='/404' />
     </Switch>
