@@ -3,7 +3,7 @@ import React from 'react';
 import { biographyData } from '../../data';
 
 export const Biography: React.FC = () => {
-  const renderEducatonSection = biographyData.education.map((i, key) => {
+  const renderEducaton = biographyData.education.map((i, key) => {
     return (
       <div key={key}>
         <h3>{i.school}</h3>
@@ -13,7 +13,7 @@ export const Biography: React.FC = () => {
     );
   });
 
-  const renderExhibitionSection = biographyData.exhibition.map((i, key) => {
+  const renderExhibition = biographyData.exhibition.map((i, key) => {
     return (
       <div key={key}>
         <h3>{i.name}</h3>
@@ -32,11 +32,11 @@ export const Biography: React.FC = () => {
       </div>
       <div>
         <h2>Education</h2>
-        {renderEducatonSection}
+        {renderEducaton}
       </div>
       <div>
         <h2>Exhibition</h2>
-        {renderExhibitionSection}
+        {renderExhibition}
       </div>
     </div>
   );
