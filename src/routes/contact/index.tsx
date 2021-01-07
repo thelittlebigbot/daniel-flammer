@@ -1,27 +1,40 @@
 import React from 'react';
+import styled from 'styled-components';
 
+import { Page, Row, Typography } from '../../components';
 import { contactData } from '../../data';
+import { style } from '../../helpers';
 
 export const Contact: React.FC = () => {
   const renderNetworks = contactData.networks.map((i, key) => {
     return (
-      <a key={key} href={i.link} target='_blank' rel='noreferrer'>
+      <Link key={key} href={i.link} target='_blank' rel='noreferrer'>
         {i.name}
-      </a>
+      </Link>
     );
   });
 
   return (
-    <div>
-      <h1>Contact</h1>
-      <div>
-        <h2>Email address</h2>
-        <a href={`mailto:${contactData.email}`}>{contactData.email}</a>
-      </div>
-      <div>
-        <h2>Networks</h2>
+    <Page>
+      <Typography type='title' variant='big'>
+        Contact
+      </Typography>
+      <Row>
+        <Typography type='title' variant='large'>
+          Email address
+        </Typography>
+        <Link href={`mailto:${contactData.email}`}>{contactData.email}</Link>
+      </Row>
+      <Row>
+        <Typography type='title' variant='large'>
+          Networks
+        </Typography>
         {renderNetworks}
-      </div>
-    </div>
+      </Row>
+    </Page>
   );
 };
+
+const Link = styled.a`
+  margin-right: ${() => style.font.size.medium};
+`;
