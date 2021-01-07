@@ -1,12 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
 
 import { contactData } from '../../data';
 
 export const Contact: React.FC = () => {
   const renderNetworks = contactData.networks.map((i, key) => {
     return (
-      <a href={i.link} target='_blank' rel='noreferrer'>
+      <a key={key} href={i.link} target='_blank' rel='noreferrer'>
         {i.name}
       </a>
     );
