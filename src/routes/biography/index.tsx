@@ -1,44 +1,75 @@
 import React from 'react';
+import styled from 'styled-components';
 
+import { Page, Row, Typography } from '../../components';
 import { biographyData } from '../../data';
+import { style } from '../../helpers';
 
 export const Biography: React.FC = () => {
   const renderEducaton = biographyData.education.map((i, key) => {
     return (
-      <div key={key}>
-        <h3>{i.school}</h3>
-        <h4>{i.degree}</h4>
-        <p>{i.date}</p>
-      </div>
+      <Component key={key}>
+        <Typography type='title' variant='medium'>
+          {i.school}
+        </Typography>
+        <Typography type='title' variant='regular'>
+          {i.degree}
+        </Typography>
+        <Typography type='text' variant='small'>
+          {i.date}
+        </Typography>
+      </Component>
     );
   });
 
   const renderExhibition = biographyData.exhibition.map((i, key) => {
     return (
-      <div key={key}>
-        <h3>{i.name}</h3>
-        <h4>{i.place}</h4>
-        <p>{i.date}</p>
-      </div>
+      <Component key={key}>
+        <Typography type='title' variant='medium'>
+          {i.name}
+        </Typography>
+        <Typography type='title' variant='regular'>
+          {i.place}
+        </Typography>
+        <Typography type='text' variant='small'>
+          {i.date}
+        </Typography>
+      </Component>
     );
   });
 
   return (
-    <div>
-      <h1>Biography</h1>
-      <div>
-        <h2>About me</h2>
-        <p>{biographyData.about.first}</p>
-        <p>{biographyData.about.second}</p>
-      </div>
-      <div>
-        <h2>Education</h2>
+    <Page>
+      <Typography type='title' variant='big'>
+        Biography
+      </Typography>
+      <Row>
+        <Typography type='title' variant='large'>
+          About me
+        </Typography>
+        <Typography type='text' variant='small'>
+          {biographyData.about.first}
+        </Typography>
+        <Typography type='text' variant='small'>
+          {biographyData.about.second}
+        </Typography>
+      </Row>
+      <Row>
+        <Typography type='title' variant='large'>
+          Education
+        </Typography>
         {renderEducaton}
-      </div>
-      <div>
-        <h2>Exhibition</h2>
+      </Row>
+      <Row>
+        <Typography type='title' variant='large'>
+          Exhibition
+        </Typography>
         {renderExhibition}
-      </div>
-    </div>
+      </Row>
+    </Page>
   );
 };
+
+const Component = styled.div`
+  margin: ${() => style.font.size.medium} 0;
+`;

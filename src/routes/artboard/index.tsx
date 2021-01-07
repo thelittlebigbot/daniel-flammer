@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-import { Row, Typography } from '../../components';
+import { Page, Row, Typography } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
 
@@ -27,12 +27,12 @@ export const Artboard: React.FC = () => {
     });
 
   return (
-    <div>
+    <Page>
       <Typography type='title' variant='big'>
         Artboard
       </Typography>
       {renderResources}
-    </div>
+    </Page>
   );
 };
 
