@@ -37,7 +37,7 @@ export const routes: Props[] = [
   },
   {
     component: Contact,
-    index: 0,
+    index: 6,
     name: 'Contact',
     path: '/contact',
     visible: true,
@@ -51,7 +51,7 @@ export const routes: Props[] = [
   },
   {
     component: News,
-    index: 0,
+    index: 5,
     name: 'News',
     path: '/news',
     visible: true,
@@ -65,7 +65,7 @@ export const routes: Props[] = [
   },
   {
     component: Publications,
-    index: 0,
+    index: 4,
     name: 'Publications',
     path: '/publications',
     visible: true,
@@ -73,7 +73,7 @@ export const routes: Props[] = [
 
   {
     component: Series,
-    index: 0,
+    index: 3,
     name: 'Series',
     path: '/series',
     visible: true,
