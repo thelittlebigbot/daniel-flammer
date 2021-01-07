@@ -53,6 +53,12 @@ const Header = styled.header`
   font-size: ${() => style.font.size.medium};
   align-items: center;
   justify-content: space-between;
+
+  & a:hover {
+    color: ${() => style.color.black};
+    background: none;
+    padding: 0;
+  }
 `;
 
 const Logo = styled.img`
@@ -66,6 +72,15 @@ const Navigation = styled.nav`
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      opacity: ${() => style.opacity};
+    }
+
+    &.active {
+      color: ${() => style.color.blue};
+      font-weight: ${() => style.font.weight.bold};
     }
   }
 `;
