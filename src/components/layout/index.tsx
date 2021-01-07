@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { logo } from '../../assets';
 import { routes, style } from '../../helpers';
 
 interface Props {
@@ -25,7 +26,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
     <Component>
       <Container>
         <Header>
-          <Logo>[LOGO]</Logo>
+          <Logo src={logo} alt='Logo' />
           <Navigation>{renderNavigationLinks}</Navigation>
         </Header>
         <Main>{children}</Main>
@@ -46,15 +47,14 @@ const Container = styled.div`
 
 const Header = styled.header`
   display: flex;
-  height: ${() => style.font.size.big};
+  height: calc(${() => style.font.size.big} * 2);
   font-size: ${() => style.font.size.medium};
   align-items: center;
   justify-content: space-between;
 `;
 
-const Logo = styled.p`
-  color: red;
-  font-weight: bold;
+const Logo = styled.img`
+  width: ${() => style.font.size.big};
 `;
 
 const Navigation = styled.nav`
