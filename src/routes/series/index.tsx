@@ -1,25 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+import { Page, Row, Typography } from '../../components';
 import { resourcesData } from '../../data';
 
 export const Series: React.FC = () => {
   const renderResources = resourcesData.map((i, key) => {
     return (
-      <Link to={i.link}>
-        <div>
-          <img src={i.thumb} alt={i.name} />
-          <h2>{i.name}</h2>
-          <p>{i.date}</p>
-        </div>
-      </Link>
+      <Row>
+        <Link to={i.link}>
+          <Image src={i.thumb} alt={i.name} />
+          <Typography type='title' variant='large'>
+            {i.name}
+          </Typography>
+          <Typography>{i.date}</Typography>
+        </Link>
+      </Row>
     );
   });
 
   return (
-    <div>
-      <h1>Series</h1>
+    <Page>
+      <Typography type='title' variant='big'>
+        Series
+      </Typography>
       {renderResources}
-    </div>
+    </Page>
   );
 };
+
+const Image = styled.img`
+  width: 50%;
+`;
