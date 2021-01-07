@@ -6,7 +6,7 @@ export const style = {
     white: '#ffffff',
   },
   font: {
-    family: 'sans-serif',
+    family: "'Poppins', sans-serif",
     size: {
       default: '16px',
       small: '0.75rem',
@@ -14,6 +14,17 @@ export const style = {
       medium: '1.25rem',
       large: '2rem',
       big: '4rem',
+    },
+    weight: {
+      thin: 100,
+      extraLight: 200,
+      light: 300,
+      regular: 400,
+      medium: 500,
+      semiBold: 600,
+      bold: 700,
+      extraBold: 800,
+      black: 900,
     },
   },
   opacity: '0.75',
@@ -47,6 +58,7 @@ export const Style = createGlobalStyle`
     background: ${style.color.white};
     font-size: ${style.font.size};
     font-family: ${style.font.family};
+    font-weight: ${style.font.weight.regular}
   }
 
   a, button {
