@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { logo } from '../../assets';
@@ -26,7 +26,9 @@ export const Layout: React.FC<Props> = ({ children }) => {
     <Component>
       <Container>
         <Header>
-          <Logo src={logo} alt='Logo' />
+          <Link to='/'>
+            <Logo src={logo} alt='Logo' />
+          </Link>
           <Navigation>{renderNavigationLinks}</Navigation>
         </Header>
         <Main>{children}</Main>
