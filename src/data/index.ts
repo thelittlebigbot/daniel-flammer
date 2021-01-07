@@ -1,3 +1,4 @@
 import { biographyData } from './biography';
+import { contactData } from './contact';
 
-export { biographyData };
+export { biographyData, contactData };
