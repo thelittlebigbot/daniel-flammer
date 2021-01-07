@@ -12,5 +12,5 @@ export const Row: React.FC<Props> = ({ children }) => {
 };
 
 const Component = styled.div`
-  margin: ${() => style.font.size.big};
+  margin: ${() => style.font.size.big} 0;
 `;
