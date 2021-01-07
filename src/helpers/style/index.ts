@@ -18,6 +18,7 @@ export const style = {
   },
   opacity: '0.75',
   transition: 'all ease-in-out 0.25s',
+  shadow: '10px 10px 20px rgba(0, 0, 0, 0.25)',
 };
 
 export const Style = createGlobalStyle`
