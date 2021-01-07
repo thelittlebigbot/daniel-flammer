@@ -13,6 +13,7 @@ export const Contact: React.FC = () => {
 
   return (
     <div>
+      <h1>Contact</h1>
       <div>
         <h2>Email address</h2>
         <a href={`mailto:${contactData.email}`}>{contactData.email}</a>

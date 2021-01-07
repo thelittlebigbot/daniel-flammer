@@ -25,6 +25,7 @@ export const Biography: React.FC = () => {
 
   return (
     <div>
+      <h1>Biography</h1>
       <div>
         <h2>About me</h2>
         <p>{biographyData.about.first}</p>
