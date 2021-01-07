@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { Page, Typography } from '../../components';
+
 export const NotFound: React.FC = () => {
   return (
-    <div>
-      <h1>404: Page Not Found</h1>
-    </div>
+    <Page>
+      <Typography type='title' variant='big'>
+        404: Page Not Found
+      </Typography>
+    </Page>
   );
 };

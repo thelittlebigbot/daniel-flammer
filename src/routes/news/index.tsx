@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { Page, Typography } from '../../components';
+
 export const News: React.FC = () => {
   return (
-    <div>
-      <h1>News</h1>
-    </div>
+    <Page>
+      <Typography type='title' variant='big'>
+        News
+      </Typography>
+    </Page>
   );
 };
