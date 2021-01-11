@@ -45,11 +45,11 @@ export const MapMenuHover: React.FC<Props> = ({ draw }) => {
       </a>
 
       {/* Travail */}
-      {/* <Link to='/work' className='work'>
+      <Link to='/artboard' className='artboard'>
         <Path d={draw.work.text} className='text' />
         <Path d={draw.work.form} className='form' />
         <Rect x='480' y='140' width='150px' height='100px' />
-      </Link> */}
+      </Link>
     </Component>
   );
 };
