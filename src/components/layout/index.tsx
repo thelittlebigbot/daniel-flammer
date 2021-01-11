@@ -62,6 +62,7 @@ const Header = styled.header`
 `;
 
 const Logo = styled.img`
+  /* width: calc(${() => style.font.size.big} * 2); */
   width: ${() => style.font.size.big};
 `;
 
@@ -76,11 +77,6 @@ const Navigation = styled.nav`
 
     &:hover {
       opacity: ${() => style.opacity};
-    }
-
-    &.active {
-      color: ${() => style.color.blue};
-      font-weight: ${() => style.font.weight.bold};
     }
   }
 `;
