@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { logo } from '../../assets';
+import logo from './assets/logo.svg';
 import { routes, style } from '../../helpers';
 
 interface Props {
