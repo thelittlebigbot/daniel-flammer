@@ -1,6 +1,8 @@
 import React from 'react';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 
+import { AnimatePresence } from 'framer-motion';
+
 import {
   Artboard,
   Biography,
@@ -86,18 +88,20 @@ export const Routes: React.FC = () => {
   React.useEffect(() => {}, []);
 
   return (
-    <Switch>
-      {routes.map((i, key) => {
-        return (
-          <Route
-            key={key}
-            exact
-            path={i.path}
-            component={withRouter(i.component)}
-          />
-        );
-      })}
-      <Redirect to='/404' />
-    </Switch>
+    <AnimatePresence>
+      <Switch>
+        {routes.map((i, key) => {
+          return (
+            <Route
+              key={key}
+              exact
+              path={i.path}
+              component={withRouter(i.component)}
+            />
+          );
+        })}
+        <Redirect to='/404' />
+      </Switch>
+    </AnimatePresence>
   );
 };

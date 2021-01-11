@@ -1,5 +1,5 @@
-import { style, Style } from './style';
+import { animationDuration } from './animations';
 import { routes, Routes } from './routes';
+import { style, Style } from './style';
 
-export { style, Style };
-export { routes, Routes };
+export { animationDuration, routes, Routes, style, Style };

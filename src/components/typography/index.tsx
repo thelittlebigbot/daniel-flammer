@@ -1,7 +1,8 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { style } from '../../helpers';
+import { animationDuration, style } from '../../helpers';
 
 interface Props {
   children: string | number;
@@ -18,16 +19,59 @@ export const Typography: React.FC<Props> = ({ children, type, variant }) => {
 
   if (type === 'title') {
     if (variant === 'small') {
-      return <TitleSmall>{children}</TitleSmall>;
+      return (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={animationDuration.long}>
+          <TitleSmall>{children}</TitleSmall>
+        </motion.div>
+      );
     } else if (variant === 'regular') {
-      return <TitleRegular>{children}</TitleRegular>;
+      return (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={animationDuration.long}>
+          <TitleRegular>{children}</TitleRegular>
+        </motion.div>
+      );
     } else if (variant === 'medium') {
-      return <TitleMedium>{children}</TitleMedium>;
+      return (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={animationDuration.long}>
+          <TitleMedium>{children}</TitleMedium>
+        </motion.div>
+      );
     } else if (variant === 'large') {
-      return <TitleLarge>{children}</TitleLarge>;
+      return (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={animationDuration.long}>
+          <TitleLarge>{children}</TitleLarge>
+        </motion.div>
+      );
     } else if (variant === 'big') {
-      return <TitleBig>{children}</TitleBig>;
-    } else return <TitleBig>{children}</TitleBig>;
+      return (
+        <motion.div
+          initial={{ opacity: 0, marginLeft: -500 }}
+          animate={{ opacity: 1, marginLeft: 0 }}
+          transition={animationDuration.slow}>
+          <TitleBig>{children}</TitleBig>
+        </motion.div>
+      );
+    } else
+      return (
+        <motion.div
+          initial={{ opacity: 0, marginRight: -500 }}
+          animate={{ opacity: 1, marginRight: 0 }}
+          transition={animationDuration.slow}>
+          <TitleBig>{children}</TitleBig>
+        </motion.div>
+      );
   }
 
   return <Text>{children}</Text>;
