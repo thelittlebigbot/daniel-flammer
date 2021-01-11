@@ -9,7 +9,7 @@ import { style } from '../../helpers';
 export const Series: React.FC = () => {
   const renderResources = resourcesData.map((i, key) => {
     return (
-      <Row>
+      <Row key={key}>
         <Component>
           <Link to={i.link}>
             <Image src={i.thumb} alt={i.name} />
@@ -17,6 +17,7 @@ export const Series: React.FC = () => {
               {i.name}
             </Typography>
             <Typography>{i.date}</Typography>
+            <Typography>{i.description}</Typography>
           </Link>
         </Component>
       </Row>
@@ -34,6 +35,8 @@ export const Series: React.FC = () => {
 };
 
 const Component = styled.div`
+  width: 50%;
+
   & a {
     color: ${() => style.color.black};
   }
@@ -48,5 +51,5 @@ const Component = styled.div`
 `;
 
 const Image = styled.img`
-  width: 50%;
+  width: 100%;
 `;
