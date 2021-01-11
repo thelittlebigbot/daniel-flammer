@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 import { mapDraw } from './utils/mapDraw';
 import { MapMenu } from './utils/MapMenu';
+import { MapMenuHover } from './utils/MapMenuHover';
 
 export const Map: React.FC = () => {
   return (
     <Component>
       <MapMenu draw={mapDraw} />
+      <MapMenuHover draw={mapDraw} />
     </Component>
   );
 };
