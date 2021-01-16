@@ -26,14 +26,7 @@ export const Artboard: React.FC = () => {
       );
     });
 
-  return (
-    <Page>
-      <Typography type='title' variant='big'>
-        Artboard
-      </Typography>
-      {renderResources}
-    </Page>
-  );
+  return <Page>{renderResources}</Page>;
 };
 
 const Grid = styled.div`
