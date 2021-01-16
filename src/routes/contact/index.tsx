@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Page, Row, Typography } from '../../components';
+import { Page, Row, Typography, Wallpaper } from '../../components';
 import { contactData } from '../../data';
 import { style } from '../../helpers';
 
@@ -31,6 +31,7 @@ export const Contact: React.FC = () => {
         </Typography>
         {renderNetworks}
       </Row>
+      <Wallpaper route='contact' />
     </Page>
   );
 };

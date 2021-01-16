@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-import { Page, Row, Typography } from '../../components';
+import { Page, Row, Typography, Wallpaper } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
 
@@ -26,7 +26,12 @@ export const Series: React.FC = () => {
       );
     });
 
-  return <Page>{renderResources}</Page>;
+  return (
+    <Page>
+      {renderResources}
+      <Wallpaper route='series' />
+    </Page>
+  );
 };
 
 const Grid = styled.div`

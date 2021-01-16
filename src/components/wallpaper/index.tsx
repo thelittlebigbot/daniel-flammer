@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { style } from '../../helpers';
 
 import {
   biographyWallpaper,
@@ -33,7 +34,10 @@ export const Wallpaper: React.FC<Props> = ({ route }) => {
 };
 
 const Component = styled.img`
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
+  width: 50%;
+  z-index: -10;
+  opacity: calc(${() => style.opacity} / 5);
 `;
