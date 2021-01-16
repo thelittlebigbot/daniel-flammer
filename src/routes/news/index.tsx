@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Arrow, Page, Typography, Wallpaper } from '../../components';
+import { Arrow, Page, Typography, Shape } from '../../components';
 
 export const News: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ export const News: React.FC = () => {
         News
       </Typography>
       <Arrow />
-      <Wallpaper route='news' />
+      <Shape route='news' />
     </Page>
   );
 };

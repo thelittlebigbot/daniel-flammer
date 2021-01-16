@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { resourcesData } from '../../data';
 
-import { Arrow, Page, Row, Typography, Wallpaper } from '../../components';
+import { Arrow, Page, Row, Typography, Shape } from '../../components';
 
 export const Slug: React.FC = () => {
   const url = window.location.pathname;
@@ -36,7 +36,7 @@ export const Slug: React.FC = () => {
     <Page>
       {renderSeries}
       <Arrow />
-      <Wallpaper route='slug' />
+      <Shape route='slug' />
     </Page>
   );
 };

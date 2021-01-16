@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { logo } from './assets';
+import { logo } from '../../assets';
 import { animationDuration, style } from '../../helpers';
 
 interface Props {

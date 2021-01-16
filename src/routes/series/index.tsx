@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-import { Arrow, Page, Row, Typography, Wallpaper } from '../../components';
+import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
 
@@ -35,7 +35,7 @@ export const Series: React.FC = () => {
     <Page>
       {renderResources}
       <Arrow />
-      <Wallpaper route='series' />
+      <Shape route='series' />
     </Page>
   );
 };

@@ -1,17 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// import { mapDraw } from './utils/mapDraw';
-// import { MapMenu } from './utils/MapMenu';
-// import { MapMenuHover } from './utils/MapMenuHover';
-import { mapHover } from './utils/mapHover';
+import { climbShape, loopShape, mindmapShape } from '../../assets';
 
-import { climbAsset, loopAsset, mindmapAsset } from './assets';
-
-// import { resourcesData } from '../../data';
 import { routes, style } from '../../helpers';
 import { Link } from 'react-router-dom';
-import { MindmapHover } from './utils/MindmapHover';
 
 export const Map: React.FC = () => {
   const renderMenuLinks = routes
@@ -26,23 +19,14 @@ export const Map: React.FC = () => {
       } else return null;
     });
 
-  // const renderImages = resourcesData.map((i, key) => {
-  //   return <Image key={key} src={i.thumb} alt={i.name} />;
-  // });
-
   return (
     <Component>
       <Mindmap id='Mindmap'>
-        {/* <MapMenu draw={mapDraw} /> */}
-        {/* <MapMenuHover draw={mapDraw} /> */}
-        <MindmapHover src={mapHover} />
-        <MindmapBackground src={mindmapAsset} />
-        <Special id='Left' src={climbAsset} alt='Climb' />
-        <Special id='Right' src={loopAsset} alt='Loop' />
+        <MindmapBackground src={mindmapShape} />
+        <Special id='Left' src={climbShape} alt='Climb' />
+        <Special id='Right' src={loopShape} alt='Loop' />
       </Mindmap>
       <Menu id='Menu'>{renderMenuLinks}</Menu>
-
-      {/* <Absolute>{renderImages}</Absolute> */}
     </Component>
   );
 };
@@ -50,7 +34,6 @@ export const Map: React.FC = () => {
 const Component = styled.div`
   @media (max-width: 736px) {
     #Mindmap {
-      /* position: relative; */
       display: none;
     }
 
@@ -89,13 +72,6 @@ const Menu = styled.div`
   }
 `;
 
-// const Absolute = styled.div`
-//   display: grid;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-// `;
-
 const MindmapBackground = styled.img`
   position: fixed;
   height: 80%;
@@ -118,10 +94,4 @@ const Special = styled.img`
   &#Right {
     right: -400px;
   }
-`;
-
-const Image = styled.img`
-  width: ${() => style.font.size.large};
-  border-radius: 50%;
-  border: 2px solid black;
 `;

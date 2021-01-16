@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Arrow, Page, Row, Typography, Wallpaper } from '../../components';
+import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { biographyData } from '../../data';
 import { style } from '../../helpers';
 
@@ -67,7 +67,7 @@ export const Biography: React.FC = () => {
         {renderExhibition}
       </Row>
       <Arrow />
-      <Wallpaper route='biography' />
+      <Shape route='biography' />
     </Page>
   );
 };
