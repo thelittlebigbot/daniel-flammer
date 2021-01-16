@@ -6,50 +6,48 @@ interface Props {
   draw: any;
 }
 
-export const MapMenuHover: React.FC<Props> = ({ draw }) => {
+export const MapHover: React.FC<Props> = ({ draw }) => {
   return (
     <Component
       height='641'
       viewBox='0 0 933 641'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
-      {/* Biographie */}
+      {/* Biography */}
       <Link to='/biography' className='biography'>
-        <Path d={draw.biography.text} className='text' />
+        <Path d={draw.biography.title} className='text' />
         <Path d={draw.biography.form} className='form' />
         <Rect x='130' y='210' width='150px' height='200px' />
       </Link>
 
       {/* Contact */}
       <Link to='/contact' className='contact'>
-        <Path d={draw.contact.text} className='text' />
+        <Path d={draw.contact.title} className='text' />
         <Path d={draw.contact.form} className='form' />
         <Rect x='130' y='510' width='120px' height='60px' />
       </Link>
 
-      {/* Nom */}
-      <Path d={draw.name.text} fill='#202020' />
+      {/* News */}
+      <Link to='/news'>
+        <Path d={draw.news.title} className='text' />
+        <Path d={draw.news.form} fill='#202020' />
+        <Path d={draw.news.form} className='form' />
+        <Rect x='700' y='100' width='120px' height='80px' />
+      </Link>
 
       {/* Publications */}
       <Link to='/publications' className='publications'>
-        <Path d={draw.publications.text} className='text' />
+        <Path d={draw.publications.title} className='text' />
         <Path d={draw.publications.form} className='form' />
         <Rect x='780' y='420' width='120px' height='150px' />
       </Link>
 
-      {/* Séries */}
+      {/* Series */}
       <a href='/series' className='series'>
-        <Path d={draw.series.text} className='text' />
+        <Path d={draw.series.title} className='text' />
         <Path d={draw.series.form} className='form' />
         <Rect x='350' y='280' width='300px' height='200px' />
       </a>
-
-      {/* Travail */}
-      <Link to='/artboard' className='artboard'>
-        <Path d={draw.work.text} className='text' />
-        <Path d={draw.work.form} className='form' />
-        <Rect x='480' y='140' width='150px' height='100px' />
-      </Link>
     </Component>
   );
 };
