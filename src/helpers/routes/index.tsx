@@ -12,6 +12,7 @@ import {
   NotFound,
   Publications,
   Series,
+  Slug,
 } from '../../routes';
 
 interface Props {
@@ -80,11 +81,17 @@ export const routes: Props[] = [
     path: '/series',
     visible: true,
   },
+
+  {
+    component: Slug,
+    index: 7,
+    name: 'Slug',
+    path: '/series/:slug',
+    visible: false,
+  },
 ];
 
 export const Routes: React.FC = () => {
-  // const reload = window.location.reload();
-
   React.useEffect(() => {}, []);
 
   return (
