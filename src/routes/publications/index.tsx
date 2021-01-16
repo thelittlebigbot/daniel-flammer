@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Page, Typography, Wallpaper } from '../../components';
+import { Arrow, Page, Typography, Wallpaper } from '../../components';
 
 export const Publications: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ export const Publications: React.FC = () => {
       <Typography type='title' variant='big'>
         Publications
       </Typography>
+      <Arrow />
       <Wallpaper route='publications' />
     </Page>
   );

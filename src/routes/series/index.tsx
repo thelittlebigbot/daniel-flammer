@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-import { Page, Row, Typography, Wallpaper } from '../../components';
+import { Arrow, Page, Row, Typography, Wallpaper } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
 
@@ -12,23 +12,29 @@ export const Series: React.FC = () => {
     .sort((a, b) => b.date - a.date)
     .map((i, key) => {
       return (
-        <Row key={key}>
+        <Blank key={key}>
+          <Typography type='title' variant='big'>
+            {i.name}
+          </Typography>
           <Typography type='title' variant='large'>
             {i.date}
           </Typography>
-          <Grid>
-            {i.resources.map((i, key) => {
-              return <Image key={key} src={i.path} alt={i.tag} />;
-            })}
-          </Grid>
+          <Row>
+            <Grid>
+              {i.resources.map((i, key) => {
+                return <Image key={key} src={i.path} alt={i.tag} />;
+              })}
+            </Grid>
+          </Row>
           <Link to={i.link}>See "{i.name}" series</Link>
-        </Row>
+        </Blank>
       );
     });
 
   return (
     <Page>
       {renderResources}
+      <Arrow />
       <Wallpaper route='series' />
     </Page>
   );
@@ -50,6 +56,8 @@ const Grid = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
+
+const Blank = styled.div``;
 
 const Image = styled.img`
   width: 100%;

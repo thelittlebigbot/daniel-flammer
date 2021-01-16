@@ -2,40 +2,46 @@ import React from 'react';
 import styled from 'styled-components';
 import { resourcesData } from '../../data';
 
-import { Row, Typography } from '../../components';
+import { Arrow, Page, Row, Typography, Wallpaper } from '../../components';
 
 export const Slug: React.FC = () => {
   const url = window.location.pathname;
 
-  const render = resourcesData.map((i, key) => {
+  const renderSeries = resourcesData.map((i, key) => {
     if (url === `${i.link}`) {
       return (
-        <div key={key}>
+        <Blank key={key}>
           <Typography type='title' variant='big'>
             {i.name}
           </Typography>
-          <Typography>{i.description}</Typography>
-          <Typography>{i.date}</Typography>
+          <Typography type='title' variant='medium'>
+            {i.date}
+          </Typography>
+          <Typography type='text'>{i.description}</Typography>
 
           {i.resources.map((y, key) => {
             return (
               <Row key={key}>
                 <Image src={y.path} alt={y.tag} />
-                <Typography>{y.tag}</Typography>
+                <Typography type='text'>{y.tag}</Typography>
               </Row>
             );
           })}
-        </div>
+        </Blank>
       );
     } else return null;
   });
 
   return (
-    <div>
-      <div>{render}</div>
-    </div>
+    <Page>
+      {renderSeries}
+      <Arrow />
+      <Wallpaper route='slug' />
+    </Page>
   );
 };
+
+const Blank = styled.div``;
 
 const Image = styled.img`
   width: 50%;
