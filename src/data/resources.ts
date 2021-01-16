@@ -3,7 +3,7 @@ export const resourcesData = [
     date: 2006,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    link: '/series',
+    link: '/series/les-desumanites',
     name: 'Les déshumanités',
     resources: [
       {
@@ -66,7 +66,7 @@ export const resourcesData = [
     date: 2009,
     description:
       'Daniel Flammer développe un registre tendu entre abstraction et représentation, c’est à dire qu’il constitue ses figures à partir du terrain de l’abstraction, terrain où la forme se vit comme tâche avant d’être figure d’usage. L’espace où les formes prennent corps est un espace que l’on peut caractériser comme bidimensionnel, à cette réserve près que la grille, assez déformée et sans doute usée par le modernisme, devient une sorte de piège à trois dimensions pour des figures colorées et bizarres, celles-ci évoquant parfois un semblant de profondeur, ce qui renforce la sensation d’avoir à faire à une surface hétérogène. Il y a de l’humour dans ses peintures, humour conjugué d’une grande aisance à composer les images.',
-    link: '/series',
+    link: '/series/les-structures',
     name: 'Les structures',
     resources: [
       {
@@ -122,7 +122,7 @@ export const resourcesData = [
     date: 2010,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    link: '/series',
+    link: '/series/entre-les-peintres',
     name: 'Entre les peintres',
     resources: [
       {
@@ -164,7 +164,7 @@ export const resourcesData = [
     date: 2013,
     description:
       'Daniel Flammer n’arrête pas sa curiosité au monde de l’art ; insatiable et tourné vers l’extérieur, il s’intéresse à la rue, aux artisans, aux petits métiers et aux mendiants. On les retrouve dans sa peinture qui, à y regarder de plus près, se rapproche plus du réel qu’elle ne le laisse penser de prime abord. A la manière des caprices de Goya, ces tableaux allégoriques se veulent les témoins de leur temps. Loin de s’enfermer dans un discours symbolique, ils jouent sur la multiplicité du sens et savent ainsi conserver leur mystère et leur saveur',
-    link: '/series',
+    link: '/series/les-chants-captifs',
     name: 'Les chants captifs',
     resources: [
       {
@@ -204,7 +204,7 @@ export const resourcesData = [
     date: 2014,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    link: '/series',
+    link: '/series/des-decollages',
     name: 'Des décollages',
     resources: [
       {
@@ -242,7 +242,7 @@ export const resourcesData = [
     date: 2016,
     description:
       'Pour comprendre les dessins de Daniel Flammer, il faut se souvenir que l’artiste les considère comme des « paysages inconscients » et non comme des architectures imaginaires : la nuance compte. Les éléments de ces dessins évoquent des formes modelées par l’homme sans que leur association ne produise de sens évident. A moins que ces motifs graphiques ne soient  comme des codes qu’il faudrait savoir déchiffrer comme  des systèmes informatiques cryptés. Je cherche à rendre la sensation de l’ordre, de l’oppression, du contrôle inhérents à une organisation bien rodée et funeste. Ces dessins sont des tentatives de figurer la mécanique de nos pensées et celle de nos angoisses existentielles que font naitre les idéologies totalitaires et xénophobes. Je pense tout particulièrement au nazisme ou à toutes formes d’idéologies qui foudroie le vivant et ne cesse de ressurgir de par le monde.',
-    link: '/series',
+    link: '/series/les-anneaux-musicaux',
     name: 'Les anneaux musicaux',
     resources: [
       {
@@ -342,7 +342,7 @@ export const resourcesData = [
     date: 2019,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    link: '/series',
+    link: '/series/les-voyages',
     name: 'Les voyages',
     resources: [
       {
@@ -412,7 +412,7 @@ export const resourcesData = [
     date: 2019,
     description:
       'La guerre des images est une nouvelle série qui mélange diverses techniques. Chaque  « écran » de cette série est composé d’éléments présentés (tubes, miroirs, ...), d’éléments représentés (des peintures, sculptures, ...) ou encore d’objets récepteurs/diffuseurs de contenus (téléphones in- telligent, écrans...). Si en première approche l’ensemble est séduisant, ludique et bricolé ; dans un autre temps un monde complexe et infini apparait nous orientant vers une analyse multifocale. Par ces objets pseudo-technologiques, je sonde l’influence des flux incessants d’images et d’histoires sur nos esprits et nos imaginaires non réifiés. Je questionne notre relation à l’amour, à la réussite ou à la mort à l’aube de cette nouvelle ère qui déploie nos existences dans un nouveau monde : virtuel et ultra (dé)connecté. ',
-    link: '/series',
+    link: '/series/guerre-des-images',
     name: 'Guerre des images',
     resources: [
       {
