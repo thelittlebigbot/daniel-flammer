@@ -4,7 +4,6 @@ import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import {
-  Artboard,
   Biography,
   Contact,
   Map,
@@ -24,13 +23,6 @@ interface Props {
 }
 
 export const routes: Props[] = [
-  {
-    component: Artboard,
-    index: 1,
-    name: 'Artboard',
-    path: '/artboard',
-    visible: true,
-  },
   {
     component: Biography,
     index: 4,
@@ -73,15 +65,13 @@ export const routes: Props[] = [
     path: '/publications',
     visible: true,
   },
-
   {
     component: Series,
-    index: 3,
+    index: 1,
     name: 'Series',
     path: '/series',
     visible: true,
   },
-
   {
     component: Slug,
     index: 7,
