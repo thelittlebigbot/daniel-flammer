@@ -4,12 +4,9 @@ import styled from 'styled-components';
 import { MapBackground } from './MapBackground';
 import { MapHover } from './MapHover';
 
-// import { MapHover } from './MapHover';
-
 import { routes, style } from '../../helpers';
 import { Link } from 'react-router-dom';
 import { mapDraw } from './mapDraw';
-import { mapTitles } from '../../assets';
 
 export const Map: React.FC = () => {
   const renderMenuLinks = routes
@@ -27,13 +24,6 @@ export const Map: React.FC = () => {
   return (
     <Component>
       <Mindmap id='Mindmap'>
-        {/* <MindmapShape src={mapBackground} /> */}
-        {/* <MindmapShape src={mapTitles} /> */}
-        {/* <Wrapper> */}
-        {/* <Link to='biography' id='Biography'> */}
-        {/* Biography */}
-        {/* </Link> */}
-        {/* </Wrapper> */}
         <MapBackground draw={mapDraw} />
         <MapHover draw={mapDraw} />
       </Mindmap>
@@ -82,52 +72,3 @@ const Menu = styled.div`
     font-weight: ${() => style.font.weight.bold};
   }
 `;
-
-const MindmapShape = styled.img`
-  position: fixed;
-  height: 80%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: ${() => style.font.size.big};
-
-  &.hover {
-    opacity: 0.25;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-`;
-
-const Wrapper = styled.div`
-  background: red;
-
-  & a {
-    position: absolute;
-    font-size: ${() => style.font.size.large};
-  }
-
-  #Biography {
-    top: 500px;
-    left: 30%;
-    transform: rotate(270deg);
-  }
-`;
-
-// const Special = styled.img`
-//   position: fixed;
-//   height: 100%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-//   z-index: -10;
-
-//   &#Left {
-//     left: -150px;
-//   }
-
-//   &#Right {
-//     right: -400px;
-//   }
-// `;
