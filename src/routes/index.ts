@@ -6,6 +6,7 @@ import { News } from './news';
 import { NotFound } from './not-found';
 import { Publications } from './publications';
 import { Series } from './series';
+import { Slug } from './slug';
 
 export {
   Artboard,
@@ -16,4 +17,5 @@ export {
   NotFound,
   Publications,
   Series,
+  Slug,
 };
