@@ -1,7 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { climbShape, loopShape, mindmapShape } from '../../assets';
+import {
+  climbShape,
+  loopShape,
+  mapBackground,
+  mapBiography,
+  mapContact,
+  mapNews,
+  mapPublications,
+  mapSeries,
+  mapTitles,
+} from '../../assets';
 
 import { routes, style } from '../../helpers';
 import { Link } from 'react-router-dom';
@@ -22,7 +32,13 @@ export const Map: React.FC = () => {
   return (
     <Component>
       <Mindmap id='Mindmap'>
-        <MindmapBackground src={mindmapShape} />
+        <MindmapShape src={mapBackground} />
+        <MindmapShape src={mapTitles} />
+        <MindmapShape src={mapBiography} />
+        <MindmapShape src={mapContact} />
+        <MindmapShape src={mapNews} />
+        <MindmapShape src={mapPublications} />
+        <MindmapShape src={mapSeries} />
         <Special id='Left' src={climbShape} alt='Climb' />
         <Special id='Right' src={loopShape} alt='Loop' />
       </Mindmap>
@@ -72,7 +88,7 @@ const Menu = styled.div`
   }
 `;
 
-const MindmapBackground = styled.img`
+const MindmapShape = styled.img`
   position: fixed;
   height: 80%;
   top: 50%;
