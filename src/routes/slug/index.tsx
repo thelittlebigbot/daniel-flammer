@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { resourcesData } from '../../data';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
+import { resourcesData } from '../../data';
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
 
 export const Slug: React.FC = () => {
@@ -22,7 +24,9 @@ export const Slug: React.FC = () => {
           {i.resources.map((y, key) => {
             return (
               <Row key={key}>
-                <Image src={y.path} alt={y.tag} />
+                <Zoom>
+                  <Image src={y.path} alt={y.tag} />
+                </Zoom>
                 <Typography type='text'>{y.tag}</Typography>
               </Row>
             );
@@ -41,8 +45,10 @@ export const Slug: React.FC = () => {
   );
 };
 
-const Blank = styled.div``;
+const Blank = styled.div`
+  width: 75%;
+`;
 
 const Image = styled.img`
-  width: 50%;
+  width: 100%;
 `;

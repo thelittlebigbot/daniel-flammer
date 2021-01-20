@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styled from 'styled-components';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { resourcesData } from '../../data';
@@ -19,10 +20,16 @@ export const Series: React.FC = () => {
           <Typography type='title' variant='large'>
             {i.date}
           </Typography>
+
           <Row>
             <Grid>
               {i.resources.map((i, key) => {
-                return <Image key={key} src={i.path} alt={i.tag} />;
+                // return <ImgsViewer key={key} imgs={i} />;
+                return (
+                  <Zoom>
+                    <Image key={key} src={i.path} alt={i.tag} />
+                  </Zoom>
+                );
               })}
             </Grid>
           </Row>
