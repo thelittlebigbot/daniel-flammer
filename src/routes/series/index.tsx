@@ -7,6 +7,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
+import { Header } from '../../components/header';
 
 export const Series: React.FC = () => {
   const renderResources = resourcesData
@@ -24,7 +25,6 @@ export const Series: React.FC = () => {
           <Row>
             <Grid>
               {i.resources.map((i, key) => {
-                // return <ImgsViewer key={key} imgs={i} />;
                 return (
                   <Zoom>
                     <Image key={key} src={i.path} alt={i.tag} />
@@ -33,7 +33,9 @@ export const Series: React.FC = () => {
               })}
             </Grid>
           </Row>
-          <Link to={i.link}>See "{i.name}" series</Link>
+          <Row>
+            <Link to={i.link}>See "{i.name}" series</Link>
+          </Row>
         </Blank>
       );
     });

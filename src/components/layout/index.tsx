@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { logo } from '../../assets';
+import { logo, newsShape } from '../../assets';
 import { animationDuration, style } from '../../helpers';
 
 interface Props {
@@ -16,26 +16,26 @@ export const Layout: React.FC<Props> = ({ children }) => {
       <Container>
         <Header>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, marginLeft: -500 }}
+            animate={{ opacity: 1, marginLeft: 0 }}
             transition={animationDuration.long}>
             <Link to='/'>
               <Logo src={logo} alt='Logo' />
             </Link>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0, marginTop: -500 }}
+            animate={{ opacity: 1, marginTop: 0 }}
+            transition={animationDuration.long}>
+            <Image src={newsShape} alt='news' />
+          </motion.div>
         </Header>
-        <motion.div
-          initial={{ marginLeft: -250 }}
-          animate={{ marginLeft: 0 }}
-          transition={animationDuration.normal}>
-          <Main>{children}</Main>
-        </motion.div>
+
+        <Main>{children}</Main>
       </Container>
     </Component>
   );
 };
-
-<motion.div transition={{ duration: 0.5 }} />;
 
 const Component = styled.div`
   width: 100%;
@@ -52,7 +52,7 @@ const Header = styled.header`
   height: calc(${() => style.font.size.big} * 2);
   font-size: ${() => style.font.size.medium};
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   & a:hover {
     color: ${() => style.color.black};
@@ -63,8 +63,13 @@ const Header = styled.header`
 
 const Logo = styled.img`
   width: calc(${() => style.font.size.big} * 2);
+  margin-right: 2rem;
 `;
 
 const Main = styled.main`
   padding: ${() => style.font.size.big} 0;
+`;
+
+const Image = styled.img`
+  width: 10rem;
 `;

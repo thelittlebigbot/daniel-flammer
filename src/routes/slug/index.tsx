@@ -25,7 +25,9 @@ export const Slug: React.FC = () => {
             return (
               <Row key={key}>
                 <Zoom>
-                  <Image src={y.path} alt={y.tag} />
+                  <Row>
+                    <Image src={y.path} alt={y.tag} />
+                  </Row>
                 </Zoom>
                 <Typography type='text'>{y.tag}</Typography>
               </Row>

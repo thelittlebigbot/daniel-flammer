@@ -57,8 +57,8 @@ export const Typography: React.FC<Props> = ({ children, type, variant }) => {
     } else if (variant === 'big') {
       return (
         <motion.div
-          initial={{ opacity: 0, marginLeft: -500 }}
-          animate={{ opacity: 1, marginLeft: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={animationDuration.slow}>
           <TitleBig>{children}</TitleBig>
         </motion.div>
@@ -66,8 +66,8 @@ export const Typography: React.FC<Props> = ({ children, type, variant }) => {
     } else
       return (
         <motion.div
-          initial={{ opacity: 0, marginRight: -500 }}
-          animate={{ opacity: 1, marginRight: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={animationDuration.slow}>
           <TitleBig>{children}</TitleBig>
         </motion.div>
