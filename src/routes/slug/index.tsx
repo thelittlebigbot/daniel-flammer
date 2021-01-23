@@ -11,7 +11,7 @@ export const Slug: React.FC = () => {
   const url = window.location.pathname;
 
   const renderSeries = resourcesData.map((i, key) => {
-    if (url === `${i.link}`) {
+    if (url === `${i.link}` && !i.hidden) {
       return (
         <Blank key={key}>
           <SEO title={i.name} description={i.description} keywords='...' />
@@ -20,17 +20,19 @@ export const Slug: React.FC = () => {
           </Typography>
 
           <Typography type='text'>{i.description}</Typography>
-          <Typography type='title' variant='medium'>
-            ff
-          </Typography>
 
           {i.resources.map((y, key) => {
             return (
               <Row key={key}>
                 <Zoom>
-                  <Image src={y.path} alt={y.tag} />
+                  <Image src={y.path} alt={i.name} />
                 </Zoom>
-                <Typography type='text'>{y.tag}</Typography>
+                <p>
+                  <b>{y.name} - </b>
+                  <i>{y.date} - </i>
+                  {y.informations}
+                </p>
+                <Space />
               </Row>
             );
           })}
@@ -54,4 +56,8 @@ const Blank = styled.div`
 
 const Image = styled.img`
   width: 100%;
+`;
+
+const Space = styled.div`
+  height: 5rem;
 `;
