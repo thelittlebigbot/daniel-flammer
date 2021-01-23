@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
+import './assets/fonts/style.css';
+
 import { Routes, Style } from './helpers';
 
 const App: React.FC = () => {
