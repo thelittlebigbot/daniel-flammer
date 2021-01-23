@@ -1,4 +1,8 @@
+import arrow from './arrow.png';
+import arrowBlock from './arrow-block.svg';
+import arrowBlue from './arrow-blue.svg';
 import logo from './logo/logo.svg';
+import menu from './logo/menu.svg';
 
 // import mapHover from './map/map-hover.svg';
 
@@ -20,6 +24,9 @@ import seriesShape from './shapes/series.svg';
 import slugShape from './shapes/slug.svg';
 
 export {
+  arrow,
+  arrowBlock,
+  arrowBlue,
   biographyShape,
   contactShape,
   climbShape,
@@ -32,6 +39,7 @@ export {
   mapPublications,
   mapSeries,
   mapTitles,
+  menu,
   newsShape,
   publicationsShape,
   seriesShape,
