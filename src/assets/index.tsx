@@ -9,6 +9,7 @@ import mapSeries from './map/map-series.svg';
 import mapTitles from './map/map-titles.svg';
 
 import menu from './menu/menu.svg';
+import menuMobile from './menu/menu-mobile.svg';
 
 import arrowShape from './shapes/arrow.svg';
 import biographyShape from './shapes/biography.svg';
@@ -35,6 +36,7 @@ export {
   mapSeries,
   mapTitles,
   menu,
+  menuMobile,
   newsShape,
   publicationsShape,
   seriesShape,
