@@ -7,7 +7,13 @@ export const style = {
     white: '#ffffff',
   },
   font: {
-    family: "'Poppins', sans-serif",
+    light: 'Futura Std Light',
+    regular: 'Futura Std Book',
+    italic: 'Futura Std Book Oblique',
+    medium: 'Futura Std Medium',
+    bold: 'Futura Std Bold',
+    heavy: 'Futura Std Heavy',
+    extraBold: 'Futura Std Extra Bold',
     size: {
       default: '16px',
       small: '0.75rem',
@@ -58,7 +64,7 @@ export const Style = createGlobalStyle`
     color: ${style.color.black};
     background: ${style.color.white};
     font-size: ${style.font.size};
-    font-family: ${style.font.family};
+    font-family: ${style.font.regular};
     font-weight: ${style.font.weight.regular}
   }
 
