@@ -1,10 +1,11 @@
 import React from 'react';
+import { newsShape } from '../../assets';
 
 import { Arrow, Page, Typography, Shape } from '../../components';
 
 export const News: React.FC = () => {
   return (
-    <Page>
+    <Page shape={newsShape}>
       <Typography type='title' variant='big'>
         News
       </Typography>

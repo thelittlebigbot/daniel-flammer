@@ -5,6 +5,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 import { resourcesData } from '../../data';
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
+import { slugShape } from '../../assets';
 
 export const Slug: React.FC = () => {
   const url = window.location.pathname;
@@ -39,7 +40,7 @@ export const Slug: React.FC = () => {
   });
 
   return (
-    <Page>
+    <Page shape={slugShape}>
       {renderSeries}
       <Arrow />
       <Shape route='slug' />

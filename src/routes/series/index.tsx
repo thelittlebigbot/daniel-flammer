@@ -7,7 +7,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
-import { Header } from '../../components/header';
+import { seriesShape } from '../../assets';
 
 export const Series: React.FC = () => {
   const renderResources = resourcesData
@@ -41,7 +41,7 @@ export const Series: React.FC = () => {
     });
 
   return (
-    <Page>
+    <Page shape={seriesShape}>
       {renderResources}
       <Arrow />
       <Shape route='series' />

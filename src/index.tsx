@@ -11,9 +11,7 @@ import { Routes, Style } from './helpers';
 const App: React.FC = () => {
   return (
     <Component>
-      <Page>
-        <Routes />
-      </Page>
+      <Routes />
     </Component>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { contactShape } from '../../assets';
 
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { contactData } from '../../data';
@@ -15,7 +16,7 @@ export const Contact: React.FC = () => {
   });
 
   return (
-    <Page>
+    <Page shape={contactShape}>
       <Typography type='title' variant='big'>
         Contact
       </Typography>

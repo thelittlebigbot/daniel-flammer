@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { biographyShape } from '../../assets';
 
 import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { biographyData } from '../../data';
@@ -39,7 +40,7 @@ export const Biography: React.FC = () => {
   });
 
   return (
-    <Page>
+    <Page shape={biographyShape}>
       <Typography type='title' variant='big'>
         Biography
       </Typography>

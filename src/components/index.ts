@@ -1,8 +1,8 @@
 import { Arrow } from './arrow';
-import { Layout } from './layout';
+import { Header } from './header';
 import { Page } from './page';
 import { Row } from './row';
 import { Typography } from './typography';
 import { Shape } from './shape';
 
-export { Arrow, Layout, Page, Row, Typography, Shape };
+export { Arrow, Header, Page, Row, Typography, Shape };

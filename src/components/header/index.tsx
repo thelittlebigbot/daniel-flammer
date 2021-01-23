@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { logo, newsShape } from '../../assets';
+import { logo } from '../../assets';
 import { animationDuration, style } from '../../helpers';
 
-export const Header: React.FC = () => {
+interface Props {
+  shape: string;
+}
+
+export const Header: React.FC<Props> = ({ shape }) => {
   return (
     <Component>
       <motion.div
@@ -21,18 +25,19 @@ export const Header: React.FC = () => {
         initial={{ opacity: 0, marginTop: -500 }}
         animate={{ opacity: 1, marginTop: 0 }}
         transition={animationDuration.long}>
-        <Image src={newsShape} alt='news' />
+        <Image src={shape} alt='Shape' />
       </motion.div>
     </Component>
   );
 };
 
 const Component = styled.header`
-  width: 100%;
   display: flex;
   height: calc(${() => style.font.size.big} * 2);
   font-size: ${() => style.font.size.medium};
   align-items: center;
+
+  margin: ${() => style.font.size.big};
 
   & a:hover {
     color: ${() => style.color.black};
@@ -46,10 +51,6 @@ const Logo = styled.img`
   margin-right: 2rem;
 `;
 
-const Main = styled.main`
-  padding: ${() => style.font.size.big} 0;
-`;
-
 const Image = styled.img`
-  width: 10rem;
+  height: 8rem;
 `;

@@ -1,4 +1,4 @@
-import logo from './logo/logo.png';
+import logo from './logo/logo.svg';
 
 // import mapHover from './map/map-hover.svg';
 
