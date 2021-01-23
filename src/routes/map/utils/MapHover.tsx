@@ -52,7 +52,7 @@ export const MapHover: React.FC<Props> = ({ draw }) => {
       <a href='/series' className='series'>
         <Path d={draw.series.title} className='text' />
         <Path d={draw.series.form} className='form' />
-        <Rect x='350' y='280' width='300px' height='200px' />
+        <Rect x='540' y='420' width='100px' height='40px' />
       </a>
     </Component>
   );
@@ -60,6 +60,12 @@ export const MapHover: React.FC<Props> = ({ draw }) => {
 
 const Component = styled.svg`
   position: absolute;
+
+  & .series {
+    position: absolute;
+    left: 20%;
+  }
+
   width: 80%;
   a {
     &:hover {
