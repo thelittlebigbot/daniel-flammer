@@ -18,10 +18,15 @@ export const Header: React.FC<Props> = ({ shape }) => {
         animate={{ opacity: 1, marginLeft: 0 }}
         transition={animationDuration.long}>
         <Link to='/'>
-          <Logo src={logo} alt='Logo' />
-          {/* <Logo src={menu} alt='Menu' /> */}
+          <Logo
+            src={logo}
+            alt='Logo'
+            onMouseEnter={(e) => (e.currentTarget.src = menu)}
+            onMouseOut={(e) => (e.currentTarget.src = logo)}
+          />
         </Link>
       </motion.div>
+
       <motion.div
         initial={{ opacity: 0, marginTop: -500 }}
         animate={{ opacity: 1, marginTop: 0 }}
