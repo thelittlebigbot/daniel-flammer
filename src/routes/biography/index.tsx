@@ -41,9 +41,6 @@ export const Biography: React.FC = () => {
 
   return (
     <Page shape={biographyShape}>
-      <Typography type='title' variant='big'>
-        Biography
-      </Typography>
       <Row>
         <Typography type='title' variant='large'>
           About me

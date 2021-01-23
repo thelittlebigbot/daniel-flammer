@@ -17,9 +17,6 @@ export const Contact: React.FC = () => {
 
   return (
     <Page shape={contactShape}>
-      <Typography type='title' variant='big'>
-        Contact
-      </Typography>
       <Row>
         <Typography type='title' variant='large'>
           Email address
