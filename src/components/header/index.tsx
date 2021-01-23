@@ -44,6 +44,7 @@ const Component = styled.header`
   align-items: center;
 
   padding: calc(${() => style.font.size.big} * 2);
+  background: red;
 
   & a:hover {
     color: ${() => style.color.black};
@@ -53,10 +54,10 @@ const Component = styled.header`
 `;
 
 const Logo = styled.img`
-  width: calc(${() => style.font.size.big} * 3);
+  width: calc(${() => style.font.size.big} * 2.5);
   margin-right: 2rem;
 `;
 
 const Image = styled.img`
-  height: 8rem;
+  height: calc(${() => style.font.size.big} * 1.75);
 `;
