@@ -5,7 +5,7 @@ import { resourcesData } from '../../../data';
 import { style } from '../../../helpers';
 
 export const MapThumbs: React.FC = () => {
-  const renderThumbs = resourcesData.map((i, key) => {
+  const renderThumbs = resourcesData.slice(0, 6).map((i, key) => {
     return (
       <Container key={key}>
         <Image src={i.thumb} alt={i.name} />
@@ -21,16 +21,15 @@ const Component = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   top: 51%;
-  left: 51%;
+  left: 52%;
   transform: translate(-50%, -50%);
-  z-index: -10;
 `;
 
 const Container = styled.div`
-  width: 3rem;
-  height: 3rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
   opacity: calc(${() => style.opacity} * 1.25);
 
   &:hover {
