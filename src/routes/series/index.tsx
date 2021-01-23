@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import { Arrow, Page, Row, Typography, Shape } from '../../components';
+import { seriesShape } from '../../assets';
+import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
-import { seriesShape } from '../../assets';
 
 export const Series: React.FC = () => {
   const renderResources = resourcesData
@@ -47,6 +47,7 @@ export const Series: React.FC = () => {
 
   return (
     <Page shape={seriesShape}>
+      <SEO title='Series' description='...' keywords='...' />
       {renderResources}
       <Arrow />
       <Shape route='series' />

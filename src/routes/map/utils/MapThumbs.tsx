@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { resourcesData } from '../../data';
-import { style } from '../../helpers';
+import { resourcesData } from '../../../data';
+import { style } from '../../../helpers';
 
 export const MapThumbs: React.FC = () => {
   const renderThumbs = resourcesData.map((i, key) => {

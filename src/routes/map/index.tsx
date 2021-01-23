@@ -2,12 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { MapBackground } from './MapBackground';
-import { mapDraw } from './mapDraw';
-import { MapHover } from './MapHover';
-import { MapThumbs } from './MapThumbs';
-
+import { SEO } from '../../components';
 import { routes, style } from '../../helpers';
+
+import { MapBackground, mapDraw, MapHover, MapThumbs } from './utils';
 
 export const Map: React.FC = () => {
   const renderMenuLinks = routes
@@ -24,6 +22,7 @@ export const Map: React.FC = () => {
 
   return (
     <Component>
+      <SEO title='Welcome' description='...' keywords='...' />
       <Mindmap id='Mindmap'>
         <MapBackground draw={mapDraw} />
         <MapHover draw={mapDraw} />

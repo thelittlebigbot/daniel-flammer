@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import { resourcesData } from '../../data';
-import { Arrow, Page, Row, Typography, Shape } from '../../components';
 import { slugShape } from '../../assets';
+import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
+import { resourcesData } from '../../data';
 
 export const Slug: React.FC = () => {
   const url = window.location.pathname;
@@ -14,6 +14,7 @@ export const Slug: React.FC = () => {
     if (url === `${i.link}`) {
       return (
         <Blank key={key}>
+          <SEO title={i.name} description={i.description} keywords='...' />
           <Typography type='title' variant='big'>
             {i.name}
           </Typography>

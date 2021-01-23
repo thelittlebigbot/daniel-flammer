@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { biographyShape } from '../../assets';
 
-import { Arrow, Page, Row, Typography, Shape } from '../../components';
+import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
 import { biographyData } from '../../data';
 import { style } from '../../helpers';
 
@@ -41,6 +41,7 @@ export const Biography: React.FC = () => {
 
   return (
     <Page shape={biographyShape}>
+      <SEO title='Biography' description='...' keywords='...' />
       <Row>
         <Typography type='title' variant='large'>
           About me

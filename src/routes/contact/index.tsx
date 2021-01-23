@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { contactShape } from '../../assets';
 
-import { Arrow, Page, Row, Typography, Shape } from '../../components';
+import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
 import { contactData } from '../../data';
 import { style } from '../../helpers';
 
@@ -17,6 +17,7 @@ export const Contact: React.FC = () => {
 
   return (
     <Page shape={contactShape}>
+      <SEO title='Contact' description='...' keywords='...' />
       <Row>
         <Typography type='title' variant='large'>
           Email address
