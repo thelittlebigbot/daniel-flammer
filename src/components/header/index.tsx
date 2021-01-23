@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { logo, menu } from '../../assets';
+import { logo, menu, menuMobile } from '../../assets';
 import { animationDuration, style } from '../../helpers';
 
 interface Props {
@@ -31,8 +31,19 @@ export const Header: React.FC<Props> = ({ shape }) => {
         initial={{ opacity: 0, marginTop: -500 }}
         animate={{ opacity: 1, marginTop: 0 }}
         transition={animationDuration.long}>
-        <Image src={shape} alt='Shape' />
+        <Shape src={shape} alt='Shape' />
       </motion.div>
+
+      <Burger>
+        <motion.div
+          initial={{ opacity: 0, marginRight: -20 }}
+          animate={{ opacity: 1, marginRight: 0 }}
+          transition={animationDuration.long}>
+          <Link to='/'>
+            <BurgerImage src={menuMobile} alt='Burger' />
+          </Link>
+        </motion.div>
+      </Burger>
     </Component>
   );
 };
@@ -42,15 +53,34 @@ const Component = styled.header`
   height: calc(${() => style.font.size.big} * 2);
   font-size: ${() => style.font.size.medium};
   align-items: center;
-
   padding: calc(${() => style.font.size.big} * 2);
-  background: red;
 
-  & a:hover {
+  a:hover {
     color: ${() => style.color.black};
     background: none;
     padding: 0;
   }
+
+  @media (max-width: 1280px) {
+    padding: ${() => style.font.size.big};
+  }
+
+  @media (max-width: 736px) {
+    justify-content: space-between;
+  }
+`;
+
+const Burger = styled.div`
+  display: none;
+  width: 4rem;
+
+  @media (max-width: 736px) {
+    display: block;
+  }
+`;
+
+const BurgerImage = styled.img`
+  width: 100%;
 `;
 
 const Logo = styled.img`
@@ -58,6 +88,10 @@ const Logo = styled.img`
   margin-right: 2rem;
 `;
 
-const Image = styled.img`
+const Shape = styled.img`
   height: calc(${() => style.font.size.big} * 1.75);
+
+  @media (max-width: 736px) {
+    display: none;
+  }
 `;
