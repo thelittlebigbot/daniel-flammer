@@ -48,7 +48,7 @@ const Mindmap = styled.div`
   display: flex;
   position: relative;
   width: 100%;
-  height: calc(100% - 4rem);
+  height: calc(100vh - 4rem);
   align-items: center;
   justify-content: center;
 `;
