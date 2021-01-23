@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { resourcesData } from '../../../data';
@@ -8,7 +9,9 @@ export const MapThumbs: React.FC = () => {
   const renderThumbs = resourcesData.slice(0, 6).map((i, key) => {
     return (
       <Container key={key}>
-        <Image src={i.thumb} alt={i.name} />
+        <Link to={i.link}>
+          <Image src={i.thumb} alt={i.name} />
+        </Link>
       </Container>
     );
   });
@@ -30,9 +33,14 @@ const Container = styled.div`
   height: 4rem;
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
-  opacity: calc(${() => style.opacity} * 1.25);
 
-  &:hover {
+  a {
+    opacity: ${() => style.opacity};
+  }
+
+  a:hover {
+    background: none;
+    padding: 0;
     opacity: 1;
   }
 `;
@@ -42,5 +50,6 @@ const Image = styled.img`
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #202020;
+  border: 3px solid #202020;
+  /* cursor: pointer; */
 `;
