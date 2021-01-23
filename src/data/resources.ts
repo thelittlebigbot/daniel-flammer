@@ -122,40 +122,36 @@ export const resourcesData = [
     date: 2010,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    link: '/series/entre-les-peintres',
-    name: 'Entre les peintres',
+    link: '/series/entre-les-peintures',
+    name: 'Entre les peintures',
     resources: [
       {
         path: '/resources/2010-entre-les-peintres/1.jpg',
-        tag:
-          'EP-DF-1 : Hommage Au Petit - 2009 - Acrylique sur toile - 250 x 200cm',
+        tag: 'Hommage Au Petit - 2009 - Acrylique sur toile - 250 x 200cm',
       },
       {
         path: '/resources/2010-entre-les-peintres/2.jpg',
-        tag:
-          'EP-DF-2 : La Fontaine Sacrée - 2009 - Acrylique sur toile 200 x 170 cm',
+        tag: 'La Fontaine Sacrée - 2009 - Acrylique sur toile 200 x 170 cm',
       },
       {
         path: '/resources/2010-entre-les-peintres/3.jpg',
-        tag: 'EP-DF-3 : Le trophée - 2009 - Acrylique sur toile - 200 x 175cm',
+        tag: 'Le trophée - 2009 - Acrylique sur toile - 200 x 175cm',
       },
       {
         path: '/resources/2010-entre-les-peintres/4.jpg',
-        tag:
-          'EP-DF-4 : Le Cheval volant - 2009 - Acrylique sur toile - 200 x 170 cm',
+        tag: 'Le Cheval volant - 2009 - Acrylique sur toile - 200 x 170 cm',
       },
       {
         path: '/resources/2010-entre-les-peintres/5.jpg',
-        tag:
-          'EP-DF-5 : Prudent Barbecue - 2009 - Acrylique sur toile - 225 x 150 cm',
+        tag: 'Prudent Barbecue - 2009 - Acrylique sur toile - 225 x 150 cm',
       },
       {
         path: '/resources/2010-entre-les-peintres/6.jpg',
-        tag: 'EP-DF-6 : Sain - 2009 - Acrylique sur toile -  225 x 150 cm',
+        tag: 'Sain - 2009 - Acrylique sur toile -  225 x 150 cm',
       },
       {
         path: '/resources/2010-entre-les-peintres/7.jpg',
-        tag: 'EP-DF-7 : Rebecca - 2009 - Acrylique sur toile - 230 x 140 cm',
+        tag: 'Rebecca - 2009 - Acrylique sur toile - 230 x 140 cm',
       },
     ],
     thumb: '/resources/2010-entre-les-peintres/thumb.jpg',

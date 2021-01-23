@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { logo } from '../../assets';
+import { logo, menu } from '../../assets';
 import { animationDuration, style } from '../../helpers';
 
 interface Props {
@@ -19,6 +19,7 @@ export const Header: React.FC<Props> = ({ shape }) => {
         transition={animationDuration.long}>
         <Link to='/'>
           <Logo src={logo} alt='Logo' />
+          {/* <Logo src={menu} alt='Menu' /> */}
         </Link>
       </motion.div>
       <motion.div
@@ -37,7 +38,7 @@ const Component = styled.header`
   font-size: ${() => style.font.size.medium};
   align-items: center;
 
-  margin: ${() => style.font.size.big};
+  padding: calc(${() => style.font.size.big} * 2);
 
   & a:hover {
     color: ${() => style.color.black};
@@ -47,7 +48,7 @@ const Component = styled.header`
 `;
 
 const Logo = styled.img`
-  width: calc(${() => style.font.size.big} * 2);
+  width: calc(${() => style.font.size.big} * 3);
   margin-right: 2rem;
 `;
 

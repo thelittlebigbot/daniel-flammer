@@ -23,5 +23,5 @@ const Component = styled.div`
 `;
 
 const Main = styled.main`
-  padding: ${() => style.font.size.big};
+  padding: calc(${() => style.font.size.big} * 2);
 `;

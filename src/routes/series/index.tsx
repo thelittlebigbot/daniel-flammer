@@ -5,7 +5,7 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import { seriesShape } from '../../assets';
-import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
+import { Arrow, Page, Row, SEO } from '../../components';
 import { resourcesData } from '../../data';
 import { style } from '../../helpers';
 
@@ -15,18 +15,6 @@ export const Series: React.FC = () => {
     .map((i, key) => {
       return (
         <Blank key={key}>
-          <Row>
-            <Typography type='title' variant='big'>
-              {i.name}
-            </Typography>
-
-            <Typography type='title' variant='large'>
-              {i.date}
-            </Typography>
-
-            <Link to={i.link}>See "{i.name}" series</Link>
-          </Row>
-
           <Row>
             <Grid>
               {i.resources.map((i, key) => {
@@ -50,7 +38,6 @@ export const Series: React.FC = () => {
       <SEO title='Series' description='...' keywords='...' />
       {renderResources}
       <Arrow />
-      <Shape route='series' />
     </Page>
   );
 };

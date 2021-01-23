@@ -43,4 +43,5 @@ const Image = styled.img`
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid #202020;
 `;

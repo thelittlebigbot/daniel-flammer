@@ -113,7 +113,7 @@ const TitleLarge = styled.h2`
 
 const TitleBig = styled.h1`
   font-size: ${() => style.font.size.big};
-  margin-bottom: ${() => style.font.size.big};
+  margin-bottom: ${() => style.font.size.medium};
   font-weight: ${() => style.font.weight.black};
   text-shadow: ${() => style.shadow};
 `;

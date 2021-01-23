@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { contactShape } from '../../assets';
 
-import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
+import { Arrow, Page, Row, SEO, Typography } from '../../components';
 import { contactData } from '../../data';
 import { style } from '../../helpers';
 
@@ -31,7 +31,6 @@ export const Contact: React.FC = () => {
         {renderNetworks}
       </Row>
       <Arrow />
-      <Shape route='contact' />
     </Page>
   );
 };

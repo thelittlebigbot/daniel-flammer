@@ -4,7 +4,7 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import { slugShape } from '../../assets';
-import { Arrow, Page, Row, SEO, Typography, Shape } from '../../components';
+import { Arrow, Page, Row, SEO, Typography } from '../../components';
 import { resourcesData } from '../../data';
 
 export const Slug: React.FC = () => {
@@ -15,21 +15,20 @@ export const Slug: React.FC = () => {
       return (
         <Blank key={key}>
           <SEO title={i.name} description={i.description} keywords='...' />
-          <Typography type='title' variant='big'>
-            {i.name}
+          <Typography type='title' variant='large'>
+            {`${i.name}, ${i.date}`}
           </Typography>
-          <Typography type='title' variant='medium'>
-            {i.date}
-          </Typography>
+
           <Typography type='text'>{i.description}</Typography>
+          <Typography type='title' variant='medium'>
+            ff
+          </Typography>
 
           {i.resources.map((y, key) => {
             return (
               <Row key={key}>
                 <Zoom>
-                  <Row>
-                    <Image src={y.path} alt={y.tag} />
-                  </Row>
+                  <Image src={y.path} alt={y.tag} />
                 </Zoom>
                 <Typography type='text'>{y.tag}</Typography>
               </Row>
@@ -44,13 +43,13 @@ export const Slug: React.FC = () => {
     <Page shape={slugShape}>
       {renderSeries}
       <Arrow />
-      <Shape route='slug' />
     </Page>
   );
 };
 
 const Blank = styled.div`
-  width: 75%;
+  width: 100%;
+  margin: 0 auto;
 `;
 
 const Image = styled.img`
