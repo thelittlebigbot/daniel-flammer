@@ -15,12 +15,17 @@ export const Series: React.FC = () => {
     .map((i, key) => {
       return (
         <Blank key={key}>
-          <Typography type='title' variant='big'>
-            {i.name}
-          </Typography>
-          <Typography type='title' variant='large'>
-            {i.date}
-          </Typography>
+          <Row>
+            <Typography type='title' variant='big'>
+              {i.name}
+            </Typography>
+
+            <Typography type='title' variant='large'>
+              {i.date}
+            </Typography>
+
+            <Link to={i.link}>See "{i.name}" series</Link>
+          </Row>
 
           <Row>
             <Grid>

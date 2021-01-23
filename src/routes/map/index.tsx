@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { MapBackground } from './MapBackground';
+import { mapDraw } from './mapDraw';
 import { MapHover } from './MapHover';
+import { MapThumbs } from './MapThumbs';
 
 import { routes, style } from '../../helpers';
-import { Link } from 'react-router-dom';
-import { mapDraw } from './mapDraw';
 
 export const Map: React.FC = () => {
   const renderMenuLinks = routes
@@ -26,6 +27,7 @@ export const Map: React.FC = () => {
       <Mindmap id='Mindmap'>
         <MapBackground draw={mapDraw} />
         <MapHover draw={mapDraw} />
+        <MapThumbs />
       </Mindmap>
       <Menu id='Menu'>{renderMenuLinks}</Menu>
     </Component>
