@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
+// @ts-ignore
+// import { ImgsViewer } from 'react-images-viewer';
+
 import { seriesShape } from '../../assets';
 import { Arrow, Page, Row, SEO } from '../../components';
 import { resourcesData } from '../../data';
@@ -19,10 +22,10 @@ export const Series: React.FC = () => {
             <Row>
               <Link to={i.link}>See "{i.name}" series</Link>
               <Grid>
-                {i.resources.map((i, key) => {
+                {i.resources.map((y, key) => {
                   return (
                     <Zoom>
-                      <Image key={key} src={i.path} alt={i.tag} />
+                      <Image key={key} src={y.path} alt={y.tag} />
                     </Zoom>
                   );
                 })}
