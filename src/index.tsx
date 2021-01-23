@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { style } from './helpers';
-
-// import { Layout } from './components';
 import { Routes, Style } from './helpers';
 
 const App: React.FC = () => {
@@ -19,10 +16,6 @@ const App: React.FC = () => {
 const Component = styled.main`
   width: 100%;
   height: 100vh;
-`;
-
-const Page = styled.div`
-  padding: ${() => style.font.size.big};
 `;
 
 ReactDOM.render(

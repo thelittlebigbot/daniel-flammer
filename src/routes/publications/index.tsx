@@ -1,7 +1,7 @@
 import React from 'react';
 import { publicationsShape } from '../../assets';
 
-import { Arrow, Page, Typography, Shape } from '../../components';
+import { Arrow, Page, Shape } from '../../components';
 
 export const Publications: React.FC = () => {
   return (
