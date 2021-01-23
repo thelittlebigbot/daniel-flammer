@@ -1,5 +1,4 @@
 import logo from './logo/logo.svg';
-import menu from './logo/menu.svg';
 
 import mapBackground from './map/map-background.svg';
 import mapBiography from './map/map-biography.svg';
@@ -8,6 +7,8 @@ import mapNews from './map/map-news.svg';
 import mapPublications from './map/map-publications.svg';
 import mapSeries from './map/map-series.svg';
 import mapTitles from './map/map-titles.svg';
+
+import menu from './menu/menu.svg';
 
 import arrowShape from './shapes/arrow.svg';
 import biographyShape from './shapes/biography.svg';
