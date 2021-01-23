@@ -17,6 +17,10 @@ const Component = styled.div`
   transform: translate(-50%, -50%);
   left: 50%;
 
+  @media (max-width: 736px) {
+    left: 2.5rem;
+  }
+
   &:hover {
     cursor: pointer;
   }

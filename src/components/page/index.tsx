@@ -24,4 +24,8 @@ const Component = styled.div`
 
 const Main = styled.main`
   padding: calc(${() => style.font.size.big} * 2);
+
+  @media (max-width: 1280px) {
+    padding: ${() => style.font.size.big};
+  }
 `;
