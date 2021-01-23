@@ -62,7 +62,8 @@ const Component = styled.header`
   }
 
   @media (max-width: 1280px) {
-    padding: ${() => style.font.size.big};
+    padding-left: ${() => style.font.size.big};
+    padding-right: ${() => style.font.size.big};
   }
 
   @media (max-width: 736px) {
