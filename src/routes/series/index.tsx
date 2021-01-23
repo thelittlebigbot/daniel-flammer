@@ -13,24 +13,24 @@ export const Series: React.FC = () => {
   const renderResources = resourcesData
     .sort((a, b) => b.date - a.date)
     .map((i, key) => {
-      return (
-        <Blank key={key}>
-          <Row>
-            <Grid>
-              {i.resources.map((i, key) => {
-                return (
-                  <Zoom>
-                    <Image key={key} src={i.path} alt={i.tag} />
-                  </Zoom>
-                );
-              })}
-            </Grid>
-          </Row>
-          <Row>
-            <Link to={i.link}>See "{i.name}" series</Link>
-          </Row>
-        </Blank>
-      );
+      if (!i.hidden) {
+        return (
+          <Blank key={key}>
+            <Row>
+              <Link to={i.link}>See "{i.name}" series</Link>
+              <Grid>
+                {i.resources.map((i, key) => {
+                  return (
+                    <Zoom>
+                      <Image key={key} src={i.path} alt={i.tag} />
+                    </Zoom>
+                  );
+                })}
+              </Grid>
+            </Row>
+          </Blank>
+        );
+      } else return null;
     });
 
   return (
@@ -59,17 +59,29 @@ const Grid = styled.div`
   }
 `;
 
-const Blank = styled.div``;
+const Blank = styled.div`
+  @media (max-width: 736px) {
+    text-align: center;
+  }
+
+  & > div > div {
+    margin-top: 1rem;
+  }
+`;
 
 const Image = styled.img`
   width: 100%;
-  padding: ${() => style.font.size.big};
+  padding-right: ${() => style.font.size.big};
+  padding-bottom: ${() => style.font.size.big};
 
   @media (max-width: 1280px) {
-    padding: ${() => style.font.size.large};
+    padding-right: ${() => style.font.size.medium};
+    padding-bottom: ${() => style.font.size.medium};
   }
 
   @media (max-width: 736px) {
     padding: ${() => style.font.size.medium};
+    padding-right: ${() => style.font.size.small};
+    padding-bottom: ${() => style.font.size.medium};
   }
 `;
