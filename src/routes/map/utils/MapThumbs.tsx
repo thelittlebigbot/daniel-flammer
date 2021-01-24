@@ -7,13 +7,15 @@ import { style } from '../../../helpers';
 
 export const MapThumbs: React.FC = () => {
   const renderThumbs = resourcesData.slice(0, 6).map((i, key) => {
-    return (
-      <Container key={key}>
-        <Link to={i.link}>
-          <Image src={i.thumb} alt={i.name} />
-        </Link>
-      </Container>
-    );
+    if (!i.hidden) {
+      return (
+        <Container key={key}>
+          <Link to={i.link}>
+            <Image src={i.thumb} alt={i.name} />
+          </Link>
+        </Container>
+      );
+    }
   });
 
   return <Component>{renderThumbs}</Component>;
