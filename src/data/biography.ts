@@ -7,36 +7,104 @@ export const biographyData = {
   },
   education: [
     {
-      date: '01/01/2000',
-      degree: 'Degree name',
-      school: 'School name',
+      date: '2002, 2003',
+      degree: 'Baccalauréat Section Scientifique',
+      school: 'Paris',
     },
     {
-      date: '01/01/2000',
-      degree: 'Degree name',
-      school: 'School name',
+      date: '2003, 2004',
+      degree: 'Préparation aux concours des Ecoles d’Arts',
+      school: 'Ateliers Beaux Arts, Paris',
     },
     {
-      date: '01/01/2000',
-      degree: 'Degree name',
-      school: 'School name',
+      date: '2004, 2007',
+      degree: 'Obtention du DNAP (Diplôme National des Arts Plastiques)',
+      school: 'Beaux-Arts (ENSBA), Paris ',
+    },
+    {
+      date: '2007, 2008',
+      degree: 'Echange universitaire',
+      school: 'Universität Der Künste, Berlin',
+    },
+    {
+      date: '2008, 2009',
+      degree:
+        'Obtention du DNSAP (Diplôme National Supérieur des Arts Plastiques) avec les félicitations du jury',
+      school: 'Beaux-Arts (ENSBA), Paris ',
     },
   ],
   exhibition: [
     {
-      date: '01/01/2000',
-      name: 'Exhibition name',
-      place: 'Paris, France',
+      date: '2008',
+      name: 'Equilibre, Exposition personnelle',
+      place: 'Galerie Totale, Berlin',
     },
     {
-      date: '01/01/2000',
-      name: 'Exhibition name',
-      place: 'Paris, France',
+      date: '2009',
+      name: 'Les 40 ans de Novembre à Vitry, Exposition collective',
+      place: 'Vitry',
     },
     {
-      date: '01/01/2000',
-      name: 'Exhibition name',
-      place: 'Paris, France',
+      date: '2010',
+      name:
+        'Mouvement des atomes, mobilité des atomes, Exposition des félicités présidé par Marc Desgrandchamps',
+      place: 'Beaux-Arts, Paris',
+    },
+    {
+      date: '2011',
+      name: 'Prix Antoine Marin parrainé par Pat Andréa',
+      place: 'Arcueil',
+    },
+    {
+      date: '2012',
+      name: 'Drawing Now Paris, Carrousel du Louvre',
+      place: 'Galerie Polad-Hardouin',
+    },
+    {
+      date: '2013',
+      name:
+        'When was the last time you did something for the first time, Exposition collective',
+      place: 'Espace des arts sans frontières, Paris',
+    },
+    {
+      date: '2013',
+      name: 'Drawing Now Paris',
+      place: 'Foire de dessin contemporain',
+    },
+    {
+      date: '2013',
+      name: 'Les Chants Captifs, Exposition personnelle',
+      place: 'Galerie Polad-Hardouin',
+    },
+    {
+      date: '2015',
+      name: 'Art Paris Artfair',
+      place: 'Grand Palais',
+    },
+    {
+      date: '2016',
+      name: 'Les anneaux musicaux, Exposition personnelle',
+      place: 'Galerie Polad-Hardouin',
+    },
+    {
+      date: '2016',
+      name: 'Art Paris Artfair',
+      place: 'Grand Palais',
+    },
+    {
+      date: '2016',
+      name: 'Lyon Art Paper, Foire d’art contemporain',
+      place: 'Lyon',
+    },
+    {
+      date: '2016',
+      name: 'Where I am in the landscape, Exposition collective',
+      place: 'Reykjavík',
+    },
+    {
+      date: '2017',
+      name: 'Between black and white is a color, Galerie Grand E’terna',
+      place: 'Paris',
     },
   ],
 };
