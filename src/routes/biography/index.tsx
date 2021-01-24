@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { biographyShape } from '../../assets';
+import { biographyShape, profilePhoto } from '../../assets';
 
 import { Arrow, Page, Row, SEO, Typography } from '../../components';
 import { biographyData } from '../../data';
@@ -43,16 +43,14 @@ export const Biography: React.FC = () => {
     <Page shape={biographyShape}>
       <SEO title='Biography' description='...' keywords='...' />
       <Row>
-        <Typography type='title' variant='large'>
-          Daniel Flammer
-        </Typography>
-        <Typography type='text' variant='small'>
+        <Typography type='text' variant='regular'>
           {biographyData.about.first}
         </Typography>
-        <Typography type='text' variant='small'>
+        <Typography type='text' variant='regular'>
           {biographyData.about.second}
         </Typography>
       </Row>
+      <Image src={profilePhoto} alt='profile' />
       <Row>
         <Typography type='title' variant='large'>
           Education
@@ -72,4 +70,8 @@ export const Biography: React.FC = () => {
 
 const Component = styled.div`
   margin: ${() => style.font.size.medium} 0;
+`;
+
+const Image = styled.img`
+  width: 50%;
 `;

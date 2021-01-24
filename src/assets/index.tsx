@@ -11,6 +11,8 @@ import mapTitles from './map/map-titles.svg';
 import menu from './menu/menu.svg';
 import menuMobile from './menu/menu-mobile.svg';
 
+import profilePhoto from './photos/profile.jpg';
+
 import arrowShape from './shapes/arrow.svg';
 import biographyShape from './shapes/biography.svg';
 import contactShape from './shapes/contact.svg';
@@ -38,6 +40,7 @@ export {
   menu,
   menuMobile,
   newsShape,
+  profilePhoto,
   publicationsShape,
   seriesShape,
   slugShape,
