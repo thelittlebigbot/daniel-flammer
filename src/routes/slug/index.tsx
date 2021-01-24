@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import { slugShape } from '../../assets';
+import { seriesShape, slugShape } from '../../assets';
 import { Arrow, Page, Row, SEO, Typography } from '../../components';
 import { resourcesData } from '../../data';
 
@@ -23,7 +23,7 @@ export const Slug: React.FC = () => {
 
           {i.resources.map((y, key) => {
             return (
-              <Row key={key}>
+              <Row>
                 <Zoom>
                   <Image src={y.path} alt={i.name} />
                 </Zoom>
@@ -42,7 +42,7 @@ export const Slug: React.FC = () => {
   });
 
   return (
-    <Page shape={slugShape}>
+    <Page shape={seriesShape}>
       {renderSeries}
       <Arrow />
     </Page>
@@ -52,6 +52,10 @@ export const Slug: React.FC = () => {
 const Blank = styled.div`
   width: 100%;
   margin: 0 auto;
+
+  & > div > div {
+    width: 50%;
+  }
 `;
 
 const Image = styled.img`
