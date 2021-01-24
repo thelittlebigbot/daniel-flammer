@@ -15,7 +15,7 @@ export const MapThumbs: React.FC = () => {
           </Link>
         </Container>
       );
-    }
+    } else return null;
   });
 
   return <Component>{renderThumbs}</Component>;
