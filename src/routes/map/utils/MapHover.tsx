@@ -49,22 +49,17 @@ export const MapHover: React.FC<Props> = ({ draw }) => {
       </Link>
 
       {/* Series */}
-      <a href='/series' className='series'>
+      <Link to='/series' className='series'>
         <Path d={draw.series.title} className='text' />
         <Path d={draw.series.form} className='form' />
         <Rect x='540' y='420' width='100px' height='40px' />
-      </a>
+      </Link>
     </Component>
   );
 };
 
 const Component = styled.svg`
   position: absolute;
-
-  & .series {
-    position: absolute;
-    left: 20%;
-  }
 
   width: 80%;
   a {
