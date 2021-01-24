@@ -1,5 +1,46 @@
 export const resourcesData = [
   {
+    date: 2004,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    hidden: false,
+    link: '/series/les-narrations',
+    name: 'Les narrations',
+    resources: [
+      {
+        path: '/resources/2004-les-narrations/1.jpg',
+        name: 'Alice et ses citrons',
+        date: '2004',
+        informations: 'Acrylique sur papier, 130 x 97 cm',
+      },
+      {
+        path: '/resources/2004-les-narrations/2.jpg',
+        name: 'Sans stèle',
+        date: '2004',
+        informations: 'Acrylique sur papier, 162 x 130 cm',
+      },
+      {
+        path: '/resources/2004-les-narrations/3.jpg',
+        name: 'Espace',
+        date: '2004',
+        informations: 'Acrylique sur papier, 100 x 81  cm',
+      },
+      {
+        path: '/resources/2004-les-narrations/4.jpg',
+        name: 'Balade',
+        date: '2004',
+        informations: 'Acrylique sur papier, 97 x 130  cm',
+      },
+      {
+        path: '/resources/2004-les-narrations/5.jpg',
+        name: 'Femme à la fleur',
+        date: '2004',
+        informations: 'Acrylique sur papier, 130 x 97 cm',
+      },
+    ],
+    thumb: '/resources/2004-les-narrations/1.jpg',
+  },
+  {
     date: 2006,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
