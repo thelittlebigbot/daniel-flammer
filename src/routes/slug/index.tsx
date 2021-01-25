@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import { seriesShape, slugShape } from '../../assets';
+import { seriesShape } from '../../assets';
 import { Arrow, Page, Row, SEO, Typography } from '../../components';
 import { resourcesData } from '../../data';
 
