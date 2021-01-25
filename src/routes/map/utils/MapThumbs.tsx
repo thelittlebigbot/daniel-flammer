@@ -6,7 +6,7 @@ import { resourcesData } from '../../../data';
 import { style } from '../../../helpers';
 
 export const MapThumbs: React.FC = () => {
-  const renderThumbs = resourcesData.slice(0, 6).map((i, key) => {
+  const renderThumbs = resourcesData.map((i, key) => {
     if (!i.hidden) {
       return (
         <Container key={key}>
@@ -24,17 +24,27 @@ export const MapThumbs: React.FC = () => {
 const Component = styled.div`
   position: absolute;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   top: 51%;
-  left: 52%;
+  left: 51.5%;
   transform: translate(-50%, -50%);
 `;
 
 const Container = styled.div`
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 1280px) {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  @media (max-width: 895px) {
+    width: 3rem;
+    height: 3rem;
+  }
 
   a {
     opacity: ${() => style.opacity};
