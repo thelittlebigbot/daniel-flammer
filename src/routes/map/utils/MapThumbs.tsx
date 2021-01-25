@@ -6,17 +6,19 @@ import { resourcesData } from '../../../data';
 import { style } from '../../../helpers';
 
 export const MapThumbs: React.FC = () => {
-  const renderThumbs = resourcesData.map((i, key) => {
-    if (!i.hidden) {
-      return (
-        <Container key={key}>
-          <Link to={i.link}>
-            <Image src={i.thumb} alt={i.name} />
-          </Link>
-        </Container>
-      );
-    } else return null;
-  });
+  const renderThumbs = resourcesData
+    .sort((a, b) => b.date - a.date)
+    .map((i, key) => {
+      if (!i.hidden) {
+        return (
+          <Container key={key}>
+            <Link to={i.link}>
+              <Image src={i.thumb} alt={i.name} />
+            </Link>
+          </Container>
+        );
+      } else return null;
+    });
 
   return <Component>{renderThumbs}</Component>;
 };
