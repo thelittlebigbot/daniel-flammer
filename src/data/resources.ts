@@ -13,18 +13,18 @@ export const resourcesData = [
         date: '2004',
         informations: 'Acrylique sur papier, 130 x 97 cm',
       },
-      {
-        path: '/resources/2004-les-narrations/2.jpg',
-        name: 'Sans stèle',
-        date: '2004',
-        informations: 'Acrylique sur papier, 162 x 130 cm',
-      },
-      {
-        path: '/resources/2004-les-narrations/3.jpg',
-        name: 'Espace',
-        date: '2004',
-        informations: 'Acrylique sur papier, 100 x 81  cm',
-      },
+      // {
+      //   path: '/resources/2004-les-narrations/2.jpg',
+      //   name: 'Sans stèle',
+      //   date: '2004',
+      //   informations: 'Acrylique sur papier, 162 x 130 cm',
+      // },
+      // {
+      //   path: '/resources/2004-les-narrations/3.jpg',
+      //   name: 'Espace',
+      //   date: '2004',
+      //   informations: 'Acrylique sur papier, 100 x 81  cm',
+      // },
       {
         path: '/resources/2004-les-narrations/4.jpg',
         name: 'Balade',
@@ -37,6 +37,66 @@ export const resourcesData = [
         date: '2004',
         informations: 'Acrylique sur papier, 130 x 97 cm',
       },
+      {
+        path: '/resources/2009-les-structures/1.jpg',
+        name: 'Arbre à clefs',
+        date: '2009',
+        informations: 'Technique mixte, 310 x 200 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/2.jpg',
+        name: 'Jeu d’enfants',
+        date: '2009',
+        informations: 'Acrylique sur toile, 162 x 130 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/3.jpg',
+        name: 'Tout un fromage',
+        date: '2009',
+        informations: 'Acrylique sur toile, 130 x 162 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/4.jpg',
+        name: 'Renard trader',
+        date: '2009',
+        informations: 'Acrylique sur toile, 162 x 130 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/5.jpg',
+        name: 'A table',
+        date: '2009',
+        informations: 'Acrylique sur toile, 162 x 130 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/6.jpg',
+        name: 'Objet',
+        date: '2009',
+        informations: 'Acrylique sur toile, 73 x 60 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/7.jpg',
+        name: 'Le banc',
+        date: '2009',
+        informations: 'Acrylique sur toile, 165 x 130 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/8.jpg',
+        name: 'Les pilliers',
+        date: '2009',
+        informations: 'Acrylique sur toile, 165 x 130 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/9.jpg',
+        name: 'Les miroirs',
+        date: '2009',
+        informations: 'Acrylique sur toile, 250 x 200 cm',
+      },
+      {
+        path: '/resources/2009-les-structures/10.jpg',
+        name: 'Tête de cheval',
+        date: '2009',
+        informations: 'Acrylique sur toile, 165 x 130 cm',
+      },
     ],
     thumb: '/resources/2004-les-narrations/1.jpg',
   },
@@ -44,7 +104,7 @@ export const resourcesData = [
     date: 2006,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    hidden: false,
+    hidden: true,
     link: '/series/les-deshumanites',
     name: 'Les déshumanités',
     resources: [
@@ -127,7 +187,7 @@ export const resourcesData = [
     date: 2009,
     description:
       'Daniel Flammer développe un registre tendu entre abstraction et représentation, c’est à dire qu’il constitue ses figures à partir du terrain de l’abstraction, terrain où la forme se vit comme tâche avant d’être figure d’usage. L’espace où les formes prennent corps est un espace que l’on peut caractériser comme bidimensionnel, à cette réserve près que la grille, assez déformée et sans doute usée par le modernisme, devient une sorte de piège à trois dimensions pour des figures colorées et bizarres, celles-ci évoquant parfois un semblant de profondeur, ce qui renforce la sensation d’avoir à faire à une surface hétérogène. Il y a de l’humour dans ses peintures, humour conjugué d’une grande aisance à composer les images.',
-    hidden: false,
+    hidden: true,
     link: '/series/les-structures',
     name: 'Les structures',
     resources: [
@@ -244,6 +304,48 @@ export const resourcesData = [
         date: '2009',
         informations: 'Acrylique sur toile, 230 x 140 cm',
       },
+      {
+        path: '/resources/2013-les-chants-captifs/1.jpg',
+        name: 'Le fils du boucher',
+        date: '2013',
+        informations: 'Huile sur toile, 22 x 16 cm',
+      },
+      {
+        path: '/resources/2013-les-chants-captifs/2.jpg',
+        name: 'Les mendiants',
+        date: '2013',
+        informations: 'Huile sur toile, 22 x 16 cm',
+      },
+      {
+        path: '/resources/2013-les-chants-captifs/3.jpg',
+        name: 'Le fou et sa solitude',
+        date: '2013',
+        informations: 'Huile sur toile, 22 x 16 cm',
+      },
+      {
+        path: '/resources/2013-les-chants-captifs/4.jpg',
+        name: 'Les oiseaux',
+        date: '2013',
+        informations: 'Huile sur toile, 22 x 16 cm',
+      },
+      {
+        path: '/resources/2013-les-chants-captifs/5.jpg',
+        name: 'Les sans abris',
+        date: '2013',
+        informations: 'Huile sur toile, 55 x 46 cm',
+      },
+      {
+        path: '/resources/2013-les-chants-captifs/6.jpg',
+        name: 'Village sécurisé',
+        date: '2013',
+        informations: 'Huile sur toile, 55 x 46 cm',
+      },
+      {
+        path: '/resources/2013-les-chants-captifs/7.jpg',
+        name: 'Les comédiens',
+        date: '2013',
+        informations: 'Huile sur toile, 55 x 46 cm',
+      },
     ],
     thumb: '/resources/2010-entre-les-peintres/thumb.jpg',
   },
@@ -251,7 +353,7 @@ export const resourcesData = [
     date: 2013,
     description:
       'Daniel Flammer n’arrête pas sa curiosité au monde de l’art ; insatiable et tourné vers l’extérieur, il s’intéresse à la rue, aux artisans, aux petits métiers et aux mendiants. On les retrouve dans sa peinture qui, à y regarder de plus près, se rapproche plus du réel qu’elle ne le laisse penser de prime abord. A la manière des caprices de Goya, ces tableaux allégoriques se veulent les témoins de leur temps. Loin de s’enfermer dans un discours symbolique, ils jouent sur la multiplicité du sens et savent ainsi conserver leur mystère et leur saveur',
-    hidden: false,
+    hidden: true,
     link: '/series/les-chants-captifs',
     name: 'Les chants captifs',
     resources: [
@@ -304,7 +406,7 @@ export const resourcesData = [
     date: 2014,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    hidden: false,
+    hidden: true,
     link: '/series/des-decollages',
     name: 'Des décollages',
     resources: [
