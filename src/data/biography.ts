@@ -7,27 +7,32 @@ export const biographyData = {
   },
   education: [
     {
-      date: '2002, 2003',
+      date: '2002',
+      dateTo: '2003',
       degree: 'Baccalauréat Section Scientifique',
       school: 'Paris',
     },
     {
-      date: '2003, 2004',
+      date: '2003',
+      dateTo: '2004',
       degree: 'Préparation aux concours des Ecoles d’Arts',
       school: 'Ateliers Beaux Arts, Paris',
     },
     {
-      date: '2004, 2007',
+      date: '2004',
+      dateTo: '2007',
       degree: 'Obtention du DNAP (Diplôme National des Arts Plastiques)',
       school: 'Beaux-Arts (ENSBA), Paris ',
     },
     {
-      date: '2007, 2008',
+      date: '2007',
+      dateTo: '2008',
       degree: 'Echange universitaire',
       school: 'Universität Der Künste, Berlin',
     },
     {
-      date: '2008, 2009',
+      date: '2008',
+      dateTo: '2009',
       degree:
         'Obtention du DNSAP (Diplôme National Supérieur des Arts Plastiques) avec les félicitations du jury',
       school: 'Beaux-Arts (ENSBA), Paris ',
