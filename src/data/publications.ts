@@ -12,7 +12,7 @@ export const publicationsData = [
     subtitle: "Catalogue d'exposition",
     editor: '',
     date: 2013,
-    thumb: '/resources/publications/2013-drawing-now/thumb.jpg',
+    thumb: '/resources/publications/2013-drawing-now/thumb.png',
     pdf: '',
   },
   {
@@ -20,7 +20,7 @@ export const publicationsData = [
     subtitle: "Catalogue d'exposition",
     editor: 'La lyonnaise des Beaux-arts',
     date: 2016,
-    thumb: '/resources/publicatoins/2016-art-paper/thumb.jpg',
+    thumb: '/resources/publications/2016-art-paper/thumb.jpg',
     pdf: '',
   },
   {
@@ -29,6 +29,6 @@ export const publicationsData = [
     editor: 'Galerie Polad-Hadouin',
     date: 2016,
     thumb: '/resources/publications/2016-les-anneaux-musicaux/thumb.jpg',
-    pdf: '/resources/publications/2016-les-anneaux-musicaux/file.jpg',
+    pdf: '/resources/publications/2016-les-anneaux-musicaux/file.pdf',
   },
 ];
