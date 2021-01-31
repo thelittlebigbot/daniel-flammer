@@ -25,7 +25,7 @@ export const Series: React.FC = () => {
                 {i.resources.map((y, key) => {
                   return (
                     <Zoom>
-                      <Image key={key} src={y.path} alt={y.tag} />
+                      <Image key={key} src={y.path} alt={y.path} />
                     </Zoom>
                   );
                 })}

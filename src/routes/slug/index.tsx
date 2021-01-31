@@ -23,7 +23,7 @@ export const Slug: React.FC = () => {
 
           {i.resources.map((y, key) => {
             return (
-              <Row>
+              <Row key={key}>
                 <Zoom>
                   <Image src={y.path} alt={i.name} />
                 </Zoom>
