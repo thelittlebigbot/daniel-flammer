@@ -413,6 +413,18 @@ export const resourcesData = [
         date: 2019,
         informations: '???',
       },
+      {
+        path: '/resources/series/2019-guerre-des-images/1.mp4',
+        name: '???',
+        date: 2019,
+        informations: '???',
+      },
+      {
+        path: '/resources/series/2019-guerre-des-images/2.mp4',
+        name: '???',
+        date: 2019,
+        informations: '???',
+      },
     ],
     thumb: '/resources/series/2019-guerre-des-images/thumb.jpg',
   },

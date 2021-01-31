@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { publicationsShape } from '../../assets';
 import { Arrow, Page, Typography, SEO, Row } from '../../components';
 import { publicationsData } from '../../data';
+import { style } from '../../helpers';
 
 export const Publications: React.FC = () => {
   const renderPublications = publicationsData
@@ -65,4 +66,14 @@ const Space = styled.div`
 
 const Button = styled.button`
   margin-top: 1rem;
+  color: ${() => style.color.blue};
+  background: none;
+  padding: 0.15rem 0;
+  border: none;
+
+  &:hover {
+    background: ${() => style.color.blue};
+    color: ${() => style.color.white};
+    padding: 0.15rem 0.5rem;
+  }
 `;

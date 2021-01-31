@@ -6,6 +6,7 @@ import { SEO } from '../../components';
 import { routes, style } from '../../helpers';
 
 import { MapBackground, mapDraw, MapHover, MapThumbs } from './utils';
+import { logo } from '../../assets';
 
 export const Map: React.FC = () => {
   const renderMenuLinks = routes
@@ -28,7 +29,10 @@ export const Map: React.FC = () => {
         <MapHover draw={mapDraw} />
         <MapThumbs />
       </Mindmap>
-      <Menu id='Menu'>{renderMenuLinks}</Menu>
+      <Menu id='Menu'>
+        <Image src={logo} alt='Logo' />
+        {renderMenuLinks}
+      </Menu>
     </Component>
   );
 };
@@ -71,5 +75,16 @@ const Menu = styled.div`
     color: ${() => style.color.black};
     margin-bottom: ${() => style.font.size.large};
     font-weight: ${() => style.font.weight.bold};
+
+    &:hover {
+      color: ${() => style.color.white};
+    }
   }
+`;
+
+const Image = styled.img`
+  position: fixed;
+  top: ${() => style.font.size.large};
+  left: ${() => style.font.size.large};
+  width: calc(${() => style.font.size.big} * 1.5);
 `;

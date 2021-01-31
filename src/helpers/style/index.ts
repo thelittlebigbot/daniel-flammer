@@ -68,7 +68,7 @@ export const Style = createGlobalStyle`
     font-weight: ${style.font.weight.regular}
   }
 
-  a, button {
+  a {
     color: ${style.color.blue};
     background: none;
     padding: 0.15rem 0;

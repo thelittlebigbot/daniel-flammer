@@ -13,7 +13,7 @@ export const Biography: React.FC = () => {
       return (
         <Component key={key}>
           <Typography type='text' variant='italic'>
-            {i.date}
+            {`${i.date}, ${i.dateTo}`}
           </Typography>
           <Typography type='text' variant='bold'>
             {i.degree}

@@ -23,11 +23,23 @@ export const Series: React.FC = () => {
               <Link to={i.link}>See "{i.name}" series</Link>
               <Grid>
                 {i.resources.map((y, key) => {
-                  return (
-                    <Zoom>
-                      <Image key={key} src={y.path} alt={y.path} />
-                    </Zoom>
-                  );
+                  const Render = () => {
+                    if (y.path.includes('mp4')) {
+                      return (
+                        <Video controls autoPlay muted>
+                          <source src={y.path} />
+                        </Video>
+                      );
+                    } else {
+                      return (
+                        <Zoom>
+                          <Image src={y.path} alt={i.name} />
+                        </Zoom>
+                      );
+                    }
+                  };
+
+                  return <Render />;
                 })}
               </Grid>
             </Row>
@@ -74,17 +86,26 @@ const Blank = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  padding-right: ${() => style.font.size.big};
-  padding-bottom: ${() => style.font.size.big};
+  padding: ${() => style.font.size.large} ${() => style.font.size.medium};
 
   @media (max-width: 1280px) {
-    padding-right: ${() => style.font.size.medium};
-    padding-bottom: ${() => style.font.size.medium};
+    padding: ${() => style.font.size.medium} ${() => style.font.size.medium};
   }
 
   @media (max-width: 736px) {
-    padding: ${() => style.font.size.medium};
-    padding-right: ${() => style.font.size.small};
-    padding-bottom: ${() => style.font.size.medium};
+    padding: ${() => style.font.size.medium} ${() => style.font.size.small};
+  }
+`;
+
+const Video = styled.video`
+  width: 100%;
+  padding: ${() => style.font.size.large} ${() => style.font.size.medium};
+
+  @media (max-width: 1280px) {
+    padding: ${() => style.font.size.medium} ${() => style.font.size.medium};
+  }
+
+  @media (max-width: 736px) {
+    padding: ${() => style.font.size.medium} ${() => style.font.size.small};
   }
 `;

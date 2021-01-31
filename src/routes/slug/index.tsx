@@ -6,6 +6,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import { seriesShape } from '../../assets';
 import { Arrow, Page, Row, SEO, Typography } from '../../components';
 import { resourcesData } from '../../data';
+import { style } from '../../helpers';
 
 export const Slug: React.FC = () => {
   const url = window.location.pathname;
@@ -22,11 +23,25 @@ export const Slug: React.FC = () => {
           <Typography type='text'>{i.description}</Typography>
 
           {i.resources.map((y, key) => {
+            const Render = () => {
+              if (y.path.includes('mp4')) {
+                return (
+                  <Video controls autoPlay muted>
+                    <source src={y.path} />
+                  </Video>
+                );
+              } else {
+                return (
+                  <Zoom>
+                    <Image src={y.path} alt={i.name} />
+                  </Zoom>
+                );
+              }
+            };
+
             return (
               <Row key={key}>
-                <Zoom>
-                  <Image src={y.path} alt={i.name} />
-                </Zoom>
+                <Render />
                 <p>
                   <b>{y.name} - </b>
                   <i>{y.date} - </i>
@@ -60,6 +75,12 @@ const Blank = styled.div`
 
 const Image = styled.img`
   width: 100%;
+  padding: ${() => style.font.size.large} 0;
+`;
+
+const Video = styled.video`
+  width: 50%;
+  padding: ${() => style.font.size.large} 0;
 `;
 
 const Space = styled.div`
