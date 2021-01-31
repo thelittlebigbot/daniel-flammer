@@ -68,13 +68,16 @@ export const Style = createGlobalStyle`
     font-weight: ${style.font.weight.regular}
   }
 
-  a {
+  a, button {
     color: ${style.color.blue};
+    background: none;
+    padding: 0.15rem 0;
+    border: none;
 
     &:hover {
       background: ${style.color.blue};
       color: ${style.color.white};
-      padding: 0.15rem 0.30rem;
+      padding: 0.15rem 0.5rem;
     }
   }
 
