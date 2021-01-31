@@ -7,37 +7,41 @@ import { biographyData } from '../../data';
 import { style } from '../../helpers';
 
 export const Biography: React.FC = () => {
-  const renderEducaton = biographyData.education.map((i, key) => {
-    return (
-      <Component key={key}>
-        <Typography type='title' variant='medium'>
-          {i.school}
-        </Typography>
-        <Typography type='title' variant='regular'>
-          {i.degree}
-        </Typography>
-        <Typography type='text' variant='small'>
-          {i.date}
-        </Typography>
-      </Component>
-    );
-  });
+  const renderEducaton = biographyData.education
+    .sort((a: any, b: any) => b.date - a.date)
+    .map((i, key) => {
+      return (
+        <Component key={key}>
+          <Typography type='text' variant='italic'>
+            {i.date}
+          </Typography>
+          <Typography type='text' variant='bold'>
+            {i.degree}
+          </Typography>
+          <Typography type='text' variant='regular'>
+            {i.school}
+          </Typography>
+        </Component>
+      );
+    });
 
-  const renderExhibition = biographyData.exhibition.map((i, key) => {
-    return (
-      <Component key={key}>
-        <Typography type='title' variant='medium'>
-          {i.name}
-        </Typography>
-        <Typography type='title' variant='regular'>
-          {i.place}
-        </Typography>
-        <Typography type='text' variant='small'>
-          {i.date}
-        </Typography>
-      </Component>
-    );
-  });
+  const renderExhibition = biographyData.exhibition
+    .sort((a: any, b: any) => b.date - a.date)
+    .map((i, key) => {
+      return (
+        <Component key={key}>
+          <Typography type='text' variant='italic'>
+            {i.date}
+          </Typography>
+          <Typography type='text' variant='bold'>
+            {i.name}
+          </Typography>
+          <Typography type='text' variant='regular'>
+            {i.place}
+          </Typography>
+        </Component>
+      );
+    });
 
   return (
     <Page shape={biographyShape}>
@@ -46,6 +50,7 @@ export const Biography: React.FC = () => {
         <Typography type='text' variant='regular'>
           {biographyData.about.first}
         </Typography>
+        <br />
         <Typography type='text' variant='regular'>
           {biographyData.about.second}
         </Typography>
