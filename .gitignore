@@ -24,5 +24,6 @@ yarn-error.log*
 # cache
 .eslintcache
 
-# notes
-NOTES.md
+# files
+TODO.md
+*.backup.*
