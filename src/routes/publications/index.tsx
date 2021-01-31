@@ -24,7 +24,6 @@ export const Publications: React.FC = () => {
         <Component key={key}>
           <Row>
             <Image src={i.thumb} alt={i.name} />
-            <Space />
             <Typography type='text' variant='italic'>
               {i.date}
             </Typography>
@@ -39,6 +38,7 @@ export const Publications: React.FC = () => {
             </Typography>
             <PDF />
           </Row>
+          <Space />
         </Component>
       );
     });
@@ -57,11 +57,11 @@ const Component = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
+  width: 70%;
 `;
 
 const Space = styled.div`
-  height: 2rem;
+  height: 3rem;
 `;
 
 const Button = styled.button`

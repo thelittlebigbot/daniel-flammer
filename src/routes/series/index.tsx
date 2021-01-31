@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-// @ts-ignore
-// import { ImgsViewer } from 'react-images-viewer';
-
 import { seriesShape } from '../../assets';
 import { Arrow, Page, Row, SEO } from '../../components';
 import { resourcesData } from '../../data';
@@ -98,7 +95,7 @@ const Image = styled.img`
 `;
 
 const Video = styled.video`
-  width: 100%;
+  width: 25%;
   padding: ${() => style.font.size.large} ${() => style.font.size.medium};
 
   @media (max-width: 1280px) {
