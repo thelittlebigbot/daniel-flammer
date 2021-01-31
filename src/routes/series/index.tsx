@@ -26,14 +26,14 @@ export const Series: React.FC = () => {
                   const Render = () => {
                     if (y.path.includes('mp4')) {
                       return (
-                        <Video controls autoPlay muted>
+                        <Video key={key} controls autoPlay muted>
                           <source src={y.path} />
                         </Video>
                       );
                     } else {
                       return (
                         <Zoom>
-                          <Image src={y.path} alt={i.name} />
+                          <Image key={key} src={y.path} alt={i.name} />
                         </Zoom>
                       );
                     }
