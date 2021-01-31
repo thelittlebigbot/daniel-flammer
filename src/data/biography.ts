@@ -1,10 +1,4 @@
-interface Props {
-  about: Object;
-  education: Object[];
-  exhibition: Object[];
-}
-
-export const biographyData: Props = {
+export const biographyData = {
   about: {
     first:
       'Daniel Flammer prolonge dans son expression artistique la grande tradition du travail sur toile et sur papier, avec des incursions récentes en direction de l’installation tridimensionnelle et de la vidéo. Sa démarche artistique relève davantage de la cosa mentale que de la représentation pure, dans une pratique nourrie de références qui tient du collage, de la métaphore, du jeu d’esprit. Il intègre des motifs privés de leur sens initial dans un langage pictural propre : mondes oniriques saturés de couleurs, imprégnés d’une technologie surréaliste, peuplés d’un bestiaire mythologique et de corps segmentés. Sa production se situe à mi-chemin entre catharsis personnelle et réflexion sur la société contemporaine.',

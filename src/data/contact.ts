@@ -1,9 +1,4 @@
-interface Props {
-  email: string;
-  networks: Object[];
-}
-
-export const contactData: Props = {
+export const contactData = {
   email: 'danielflammer123@gmail.com',
   networks: [
     {

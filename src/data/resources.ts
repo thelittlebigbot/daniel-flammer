@@ -1,14 +1,4 @@
-interface Props {
-  date: number;
-  description: string;
-  hidden: boolean;
-  link: string;
-  name: string;
-  resources: Object[];
-  thumb: string;
-}
-
-export const resourcesData: Props[] = [
+export const resourcesData = [
   {
     date: 2009,
     description:

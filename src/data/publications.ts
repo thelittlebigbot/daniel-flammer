@@ -1,13 +1,4 @@
-interface Props {
-  name: string;
-  subtitle: string;
-  editor: string;
-  date: number;
-  thumb: string;
-  pdf: string;
-}
-
-export const publicationsData: Props[] = [
+export const publicationsData = [
   {
     name: 'Mouvement des atomes',
     editor: 'Ecole nationale supérieure des Beaux-arts',
