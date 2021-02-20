@@ -84,4 +84,34 @@ export const Style = createGlobalStyle`
   a, button {
     transition: ${style.transition};
   }
+
+ 
+
+  [style~="2147483647;"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    & .description {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0.5rem;
+      width: 100%;
+      opacity: ${style.opacity};
+
+      transition: all ease-in-out 2s;
+
+    }
+  }
 `;
+
+
