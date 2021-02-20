@@ -1,5 +1,7 @@
 # Daniel Flammer
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6d48dab8-3002-4d84-9efa-777b73dedeab/deploy-status)](https://app.netlify.com/sites/happy-heyrovsky-0e6916/deploys)
+
 ## Table of contents
 
 - [Daniel Flammer](#daniel-flammer)
