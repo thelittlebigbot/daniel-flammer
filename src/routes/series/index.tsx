@@ -29,8 +29,9 @@ export const Series: React.FC = () => {
                       );
                     } else {
                       return (
-                        <Zoom>
+                        <Zoom key="zoom">
                           <Image key={key} src={y.path} alt={i.name} />
+                          <Tag className="description">{`${y.name} - ${y.date} - ${y.informations}`}</Tag>
                         </Zoom>
                       );
                     }
@@ -94,8 +95,14 @@ const Image = styled.img`
   }
 `;
 
+const Tag = styled.p`
+  font-size: 0.5rem;
+  display: none;
+  text-align: center;
+`
+
 const Video = styled.video`
-  width: 25%;
+  width: 100%;
   padding: ${() => style.font.size.large} ${() => style.font.size.medium};
 
   @media (max-width: 1280px) {
