@@ -8,6 +8,7 @@
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [About the project](#about-the-project)
+    - [Visit website](#visit-website)
     - [Buit with](#buit-with)
     - [Version](#version)
   - [Getting started](#getting-started)
@@ -22,7 +23,11 @@
 
 ### About the project
 
-This site was created for the painter and sculptor Daniel Flammer. All the geometrical shapes of the site were made by him and converted into a SVG file to be able to animate them.
+This site was created for the painter and sculptor Daniel Flammer. All the geometrical shapes and navigation idea of the site were made by him and converted into a SVG file to be able to animate them.
+
+### Visit website
+
+[danielflammer.com](https://danielflammer.com)
 
 ### Buit with
 
