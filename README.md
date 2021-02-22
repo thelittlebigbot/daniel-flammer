@@ -7,7 +7,6 @@
 - [Daniel Flammer](#daniel-flammer)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [About the project](#about-the-project)
     - [Buit with](#buit-with)
     - [Version](#version)
   - [Getting started](#getting-started)
@@ -19,8 +18,6 @@
   - [License](#license)
 
 ## Overview
-
-### About the project
 
 This site was created for the painter and sculptor Daniel Flammer. All the geometrical shapes of the site were made by him and converted into a SVG file to be able to animate them.
 
