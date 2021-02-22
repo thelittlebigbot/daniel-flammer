@@ -2,7 +2,7 @@ export const resourcesData = [
   {
     date: 2009,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Daniel Flammer développe un registre tendu entre abstraction et représentation, c’est à dire qu’il constitue ses figures à partir du terrain de l’abstraction, terrain où la forme se vit comme tâche avant d’être figure d’usage. L’espace où les formes prennent corps est un espace que l’on peut caractériser comme bidimensionnel, à cette réserve près que la grille, assez déformée et sans doute usée par le modernisme, devient une sorte de piège à trois dimensions pour des figures colorées et bizarres, celles-ci  évoquant parfois un semblant de profondeur, ce qui renforce la sensation d’avoir à faire à une surface hétérogène. Il y a de l’humour dans ses peintures, humour conjugué d’une grande aisance à composer les images.',
     hidden: false,
     link: '/series/les-structures',
     name: 'Les structures',
