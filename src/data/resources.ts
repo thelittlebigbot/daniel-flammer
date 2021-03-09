@@ -2,7 +2,7 @@ export const resourcesData = [
   {
     date: 2009,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Daniel Flammer développe un registre tendu entre abstraction et représentation, c’est à dire qu’il constitue ses figures à partir du terrain de l’abstraction, terrain où la forme se vit comme tâche avant d’être figure d’usage. L’espace où les formes prennent corps est un espace que l’on peut caractériser comme bidimensionnel, à cette réserve près que la grille, assez déformée et sans doute usée par le modernisme, devient une sorte de piège à trois dimensions pour des figures colorées et bizarres, celles-ci  évoquant parfois un semblant de profondeur, ce qui renforce la sensation d’avoir à faire à une surface hétérogène. Il y a de l’humour dans ses peintures, humour conjugué d’une grande aisance à composer les images.',
     hidden: false,
     link: '/series/les-structures',
     name: 'Les structures',
@@ -86,12 +86,13 @@ export const resourcesData = [
         informations: 'Acrylique sur papier, 130 x 97 cm',
       },
     ],
-    thumb: '/resources/series/2004-les-narrations/1.jpg',
+    thumb: '/resources/series/2009-les-structures/thumb.jpg',
   },
   {
     date: 2010,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      "Les peintures de Daniel Flammer sont des paysages mentaux. Mélange d'inquiétude et d'incongru, où les règnes de la nature s'entremêlent en d'étranges créatures hybrides, ils nous font penser à des rêves, à des cauchemars quelquefois. Des personnages au regard absent, d'autres à l'expression opaque derrière leur tête d'animal, font vaciller nos repères.(…) Ces scènes semblent nous raconter des histoires, venues peut-être des mythes anciens qui peuplent notre inconscient. Mais on a beau les regarder, en scruter les nombreux détails – un homme qui court au loin dans un nuage (est-ce de la poussière?), d'autres qui non loin du feu se livrent à d'invisibles travaux – ils ne nous livrent rien de leur mystère. Nous laissant séduits et perplexes. Nadine Vasseur, Journaliste et écrivaine",
+
     hidden: false,
     link: '/series/entre-les-peintures',
     name: 'Entre les peintures',
@@ -325,111 +326,125 @@ export const resourcesData = [
     resources: [
       {
         path: '/resources/series/2019-guerre-des-images/1.jpg',
-        name: 'null',
+        name: 'Selfie - Recto',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Technique multimédia : 3 iPad, 2 vidéos de 3’, cuir, fils et prise électrique, plastique ondulé, impressions numériques, peinture et socle en acier, 225 x 95 x 48 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/2.jpg',
-        name: 'null',
+        name: 'Selfie - Verso',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Technique multimédia : 3 iPad, 2 vidéos de 3’, cuir, fils et prise électrique, plastique ondulé, impressions numériques, peinture et socle en acier, 225 x 95 x 48 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/3.jpg',
-        name: 'null',
+        name: "Vue d'ensemble: Miroir / Film",
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile, crayon de couleurs, bois, plexiglas, miroirs, 52x 66 x 5 cm / Peinture à l’huile, plâtre, cuir, 70 x 60 x 15 cm ',
       },
       {
         path: '/resources/series/2019-guerre-des-images/4.jpg',
-        name: 'null',
+        name: 'Film',
         date: 2019,
-        informations: 'null',
+        informations: 'Peinture à l’huile, plâtre, cuir, 70 x 60 x 15 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/5.jpg',
-        name: 'null',
+        name: "Vue générale de l'installation",
         date: 2019,
         informations: 'null',
       },
       {
         path: '/resources/series/2019-guerre-des-images/6.jpg',
-        name: 'null',
+        name: "Vue générale de l'installation",
         date: 2019,
         informations: 'null',
       },
       {
         path: '/resources/series/2019-guerre-des-images/7.jpg',
-        name: 'null',
+        name: "Vue d'ensemble: Théâtre / Nature",
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier marouflé pâte à bois, boulons, 50 x 83 x 23 cm / Pierre noire sur papier, impressions 3D, bois sculpté, plexiglas, 70 x 51 x 4 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/8.jpg',
-        name: 'null',
+        name: "Vue d'ensemble: Ascension sociale / Vitesse ",
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier, crayon, bois, iPad, vidéo HD de 30 secondes, 71 x 85 x 5cm / Peinture à l’huile sur papier marouflé, baguettes en aluminium, résine d’inclusion, voitures d’enfants, circuit électrique, 65 x 50 x 5 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/9.jpg',
-        name: 'null',
+        name: 'Vitesse',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier marouflé, baguettes en aluminium, résine d’inclusion, voitures d’enfants, circuit électrique, 65 x 50 x 5 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/10.jpg',
-        name: 'null',
+        name: 'Miroir',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile, crayon de couleurs, bois, plexiglas, miroirs; 52x 66 x 5 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/11.jpg',
-        name: 'null',
+        name: "Vue d'ensemble: Télésurveillance / Aquarium",
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile et crayons de couleur sur papier marouflé, iPad, vidéo HD de 40 secondes, 56 x 95 x 25 cm / Crayons de couleur sur papier marouflé, plexiglas, tubes et eau, 57 x 82 x  11 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/12.jpg',
-        name: 'null',
+        name: "Vue générale de l'installation",
         date: 2019,
         informations: 'null',
       },
       {
         path: '/resources/series/2019-guerre-des-images/13.jpg',
-        name: 'null',
+        name: 'Téléphone',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier marouflé, téléphone, résine d’inclusion, baguette de bois, 48 x 64 x 4 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/14.jpg',
-        name: 'null',
+        name: 'Connexion',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier marouflé, prises et fils électriques, résine d’inclusion, 49 x 64 x 4 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/15.jpg',
-        name: 'null',
+        name: 'Théâtre',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier marouflé pâte à bois, boulons, 50 x 83 x 23 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/1.mp4',
-        name: 'null',
+        name: 'Télésurveillance',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile et crayons de couleur sur papier marouflé, iPad, vidéo HD de 40 secondes, 56 x 95 x 25 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/2.mp4',
-        name: 'null',
+        name: 'Ascension sociale',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Peinture à l’huile sur papier, crayon, bois, iPad, vidéo HD de 30 secondes, 71 x 85 x 5cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/3.mp4',
-        name: 'null',
+        name: 'Selfie',
         date: 2019,
-        informations: 'null',
+        informations:
+          'Technique multimédia: 3 iPad, 2 vidéos de 3’, cuir, fils et prise électrique, plastique ondulé, impressions numériques, peinture et socle en acier, 225 x 95 x 48 cm',
       },
     ],
     thumb: '/resources/series/2019-guerre-des-images/thumb.jpg',

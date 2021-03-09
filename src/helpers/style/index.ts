@@ -96,6 +96,8 @@ export const Style = createGlobalStyle`
       position: absolute;
       top: 50%;
       left: 50%;
+      width: auto;
+      max-height: 80%;
       transform: translate(-50%, -50%);
     }
 
@@ -113,5 +115,3 @@ export const Style = createGlobalStyle`
     }
   }
 `;
-
-
