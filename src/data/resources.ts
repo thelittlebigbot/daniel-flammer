@@ -349,19 +349,19 @@ export const resourcesData = [
         path: '/resources/series/2019-guerre-des-images/4.jpg',
         name: 'Film',
         date: 2019,
-        informations: 'Peinture à l’huile, plâtre, cuir,70 x 60 x 15 cm',
+        informations: 'Peinture à l’huile, plâtre, cuir, 70 x 60 x 15 cm',
       },
       {
         path: '/resources/series/2019-guerre-des-images/5.jpg',
         name: "Vue générale de l'installation",
         date: 2019,
-        informations: '',
+        informations: 'null',
       },
       {
         path: '/resources/series/2019-guerre-des-images/6.jpg',
         name: "Vue générale de l'installation",
         date: 2019,
-        informations: '',
+        informations: 'null',
       },
       {
         path: '/resources/series/2019-guerre-des-images/7.jpg',
@@ -402,7 +402,7 @@ export const resourcesData = [
         path: '/resources/series/2019-guerre-des-images/12.jpg',
         name: "Vue générale de l'installation",
         date: 2019,
-        informations: '',
+        informations: 'null',
       },
       {
         path: '/resources/series/2019-guerre-des-images/13.jpg',
