@@ -86,7 +86,7 @@ export const resourcesData = [
         informations: 'Acrylique sur papier, 130 x 97 cm',
       },
     ],
-    thumb: '/resources/series/2004-les-narrations/1.jpg',
+    thumb: '/resources/series/2009-les-structures/thumb.jpg',
   },
   {
     date: 2010,
