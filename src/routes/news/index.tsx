@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { newsShape } from '../../assets';
 import { Arrow, Page, SEO, Typography } from '../../components';
 
+import newsImage from '../../assets/news/news.jpg';
+
 export const News: React.FC = () => {
   return (
     <Page shape={newsShape}>
@@ -11,7 +13,7 @@ export const News: React.FC = () => {
       <Typography type='title' variant='large'>
         Printemps 2021: Visite de l'ADIAF à l'atelier
       </Typography>
-      <Image src='/resources/2019-guerre-des-images/6.jpg' alt='News' />
+      <Image src={newsImage} alt='News' />
       <Arrow />
     </Page>
   );
