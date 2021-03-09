@@ -39,13 +39,21 @@ export const Slug: React.FC = () => {
               }
             };
 
+            const renderInformations = (): string => {
+              if (y.informations !== 'null') {
+                return ` - ${y.informations}`;
+              } else {
+                return '';
+              }
+            };
+
             return (
               <Row key={key}>
                 <Render />
                 <p>
                   <b>{y.name} - </b>
-                  <i>{y.date} - </i>
-                  {y.informations}
+                  <i>{y.date}</i>
+                  {renderInformations()}
                 </p>
                 <Space />
               </Row>
